@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--flip animation-->
+    <link href="../dist/flip-animation.css" rel="stylesheet">
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../dist/image-slide.css">
+    <link rel="stylesheet" href="../dist/days-select-slider.css">
+    <link href="../dist/style.css" rel="stylesheet">    
+    
+</head>
+<body>
+    <header class="bg-[rgba(255,255,255,1)] overflow-hidden fixed top-0 left-0 right-0 z-50" style="box-shadow: 0px 4px 15px 0px rgba(47, 47, 47, 0.12)">
+        <nav class='2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto flex flex-row items-center justify-between py-4'>
+            <a href="" class="">
+                <img src="../assets/images/LOGO.png" alt="app logo" class="w-28">
+            </a>
+            <div class="flex flex-row items-center gap-9">
+                <div class="6md:flex hidden flex-row gap-10 items-center justify-start relative">
+                    <a href="./index.html">
+                        <div class="text-[#7e57c2] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold relative">
+                        Home
+                    </div>
+                    </a>
+                   <a href="./about.html">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        About
+                    </div>
+                   </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Services
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Pricing
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Works
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Blogs
+                    </div>
+                    </a>
+                </div>
+                <a href="" class="">
+                    <div class="bg-gradient-to-l  from-[#b085f5] via-[#7e57c2] to-[#00557f] hover:from-[#00557f] hover:via-[#7e57c2] hover:to-[#b085f5] rounded-xl w-[144.76px] h-[54.37px] flex justify-center items-center text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold">
+                        Book Now
+                    </div>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+    	<div class="contact-hero-area relative">
+    		<!-- contact page hero start -->
+    		<div class="text-[#D1D1D1] dark:text-[#4f4f4f] light:text-red-400 absolute top-0 left-0 -z-40">
+    			<svg width="836" height="442" viewBox="0 0 836 442" fill="none" xmlns="http://www.w3.org/2000/svg">
+    				<line x1="-114" y1="45.9178" x2="835" y2="45.9178" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="-114" y1="128.23" x2="835" y2="128.23" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="-114" y1="210.542" x2="835" y2="210.542" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="-114" y1="292.854" x2="835" y2="292.854" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="-114" y1="375.166" x2="835" y2="375.166" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="86" y1="1" x2="86" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="186" y1="1" x2="186" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="286" y1="1" x2="286" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="386" y1="1" x2="386" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="486" y1="1" x2="486" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="586" y1="1" x2="586" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="686" y1="1" x2="686" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    				<line x1="786" y1="1" x2="786" y2="590" stroke="currentColor" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    			</svg>
+    		</div>
+    		<div class="bg-[rgba(255,255,255,.80)] rounded-[50%] h-[1018px] w-[1199px] absolute -top-60 -right-52 -z-30" style="filter: blur(53.7px);"></div>
+    		<div class="absolute -top-11 left-[73%] -translate-x-2/4 -z-0 h-[450px] w-[450px] rounded-full bg-gradient-to-r from-[#AD57C2]/30 via-[#7646A9]/30 to-[#141168]/30 blur-[96px]"></div>
+    		<div class=" absolute top-24 left-[87%] -translate-x-2/4 -z-10">
+    			<div class="relative">
+    				<div class="rounded-full h-[646px] w-[646px] border-[3px] border-[#d0c5e5] absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4"></div>
+    				<div class="rounded-full h-[480px] w-[480px] border-[3px] border-[#d0c5e5] absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4"></div>
+    				<div class="rounded-full h-[327px] w-[327px] border-[3px] border-[#d0c5e5] absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4"></div>
+    			</div>
+    		</div>
+    		<div class="absolute top-80 left-12">
+    			<div class=" relative">
+    				<div class="rounded-[50%] w-[94px] h-[94px]  bg-gradient-to-r from-[#00557F] via-[#7E57C2] to-[#B085F5] absolute top-[50%] -left-4 -translate-y-2/4 -z-10  blur-[33px]"></div>
+    				<div class="rounded-[50%] w-[120px] h-[120px]  border-2 border-[#d0c5e5] absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 -z-20"></div>
+    				<div class="rounded-[50%] w-[173px] h-[173px]  border-2 border-[#d0c5e5] absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 -z-20"></div>
+    				<div class="rounded-[50%] w-[227px] h-[227px]  border-2 border-[#d0c5e5] absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 -z-20"></div>
+    			</div>
+    		</div>
+    		<div class="bg-[#ffffff] rounded-[50%] h-[277px] w-[1007px] absolute top-[380px] -left-24"  style="filter: blur(26.9px)"></div>
+    		<!-- contact page hero end -->
+    		<div class="2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto">
+    			 <div class="pt-48 flex 3lg:flex-row flex-col 3lg:items-end 3lg:gap-0 gap-11">
+                    <div class="w-full">
+                    	<div class="text-left text-2xl font-bold pb-5">
+                    		<span>
+                    			<span class="font-jura text-[#2F2F2F]">Contact Us</span>
+                    			<span class="font-jura text-[#7E57C2]">//</span>
+                    		</span>
+                    	</div>
+
+                    	<div class="text-left text-5xl font-bold pb-3">
+                    		<span>
+                    			<span class="font-jura text-[#2F2F2F]">Get Ready To</span>
+                    			<span class="font-jura text-[#7E57C2]">Work With US</span>
+                    		</span>
+                    	</div>
+
+                    	<div class="text-[#515151] text-left font-Jaldi text-2xl leading-10 font-normal relative">
+                    		Lorem ipsum dolor sit amet consectetur. Sem enim magna rutrum nulla eget augue
+                    		ipsum nec.
+                    	</div>
+
+                    </div>
+
+                    <div class="h-auto w-full flex 3lg:justify-end justify-start">
+                        <div class="space-y-3">
+                            <div class="flex flex-wrap gap-3">
+                                <div class="bg-[#f9f9f9] rounded-[10px] xs6:w-[226px] w-full pb-1 px-2 xs6:!pt-1 !pt-3 flex xs6:flex-row flex-col gap-3 items-center">
+                                    <div class="bg-[rgba(126,87,194,0.60)] h-[31px] w-[31px] rounded-md flex justify-center items-center">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5844 1.46148C17.5844 1.46148 16.8202 1.20013 16.1939 1.04077C14.4734 0.602649 10.8571 0.369141 9.00002 0.369141C7.14293 0.369141 3.52668 0.602649 1.80614 1.04077C1.17979 1.20016 0.41567 1.46148 0.41567 1.46148C0.150522 1.54164 -0.0218141 1.79631 0.00223275 2.07229L0.301307 5.5118C0.32792 5.814 0.581045 6.04621 0.884233 6.04621H3.86503C4.16407 6.04621 4.41498 5.82064 4.44697 5.52315L4.59744 4.11785C4.62721 3.83906 4.85056 3.62081 5.12998 3.59701C5.12998 3.59701 7.53762 3.37968 9.00002 3.37968C10.462 3.37968 12.87 3.59701 12.87 3.59701C13.1495 3.62078 13.3728 3.83906 13.4026 4.11785L13.5534 5.52315C13.585 5.82064 13.836 6.04621 14.135 6.04621H17.1155C17.419 6.04621 17.6721 5.814 17.6987 5.5118L17.9978 2.07229C18.0219 1.79631 17.8496 1.54164 17.5844 1.46148Z" fill="white" />
+                                            <path d="M12.5685 4.30322H10.6221V5.92523H7.37802V4.30322H5.43159C5.43159 4.30322 5.10717 8.52046 1.21436 11.6023C1.21436 12.7377 1.21436 16.1708 1.21436 16.1708C1.21436 16.4246 1.42027 16.6306 1.67402 16.6306H16.326C16.5798 16.6306 16.7857 16.4246 16.7857 16.1708C16.7857 16.1708 16.7857 12.7377 16.7857 11.6023C12.8929 8.52046 12.5685 4.30322 12.5685 4.30322ZM11.9098 13.2607V14.5758H10.5951V13.2607H11.9098ZM11.9098 11.1812V12.4963H10.5951V11.1812H11.9098ZM10.5951 10.4165V9.10181H11.9098V10.4165H10.5951ZM9.65738 13.2607V14.5758H8.34267V13.2607H9.65738ZM9.65738 11.1812V12.4963H8.34267V11.1812H9.65738ZM9.65738 9.10181V10.4165H8.34267V9.10181H9.65738ZM7.40495 13.2607V14.5758H6.09021V13.2607H7.40495ZM7.40495 11.1812V12.4963H6.09021V11.1812H7.40495ZM7.40495 9.10181V10.4165H6.09021V9.10181H7.40495Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-[#2f2f2f] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold w-[146px] h-[38px]">
+                                        +880 1953683518
+                                    </div>
+                                </div>
+                                <div class="bg-[#f9f9f9] rounded-[10px] xs6:w-[265px] w-full pb-1 px-2 xs6:!pt-1 !pt-3 flex xs6:flex-row flex-col gap-3 items-center">
+                                    <div class="bg-[rgba(126,87,194,0.60)] h-[31px] w-[31px] rounded-md flex justify-center items-center">
+                                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.068 0.5H16.643C18.018 0.5 18.711 1.149 18.711 2.469V11.731C18.711 13.04 18.018 13.7 16.643 13.7H2.068C0.693 13.7 0 13.04 0 11.731V2.469C0 1.149 0.693 0.5 2.068 0.5ZM9.35 9.96L16.764 3.877C17.028 3.657 17.237 3.151 16.907 2.7C16.588 2.249 16.005 2.238 15.62 2.513L9.35 6.759L3.091 2.513C2.706 2.238 2.123 2.249 1.804 2.7C1.474 3.151 1.683 3.657 1.947 3.877L9.35 9.96Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-[#2f2f2f] xs6:w-auto w-full xs6:text-left text-center font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold w-[146px] h-[38px]">
+                                        naimul46823@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-[#f9f9f9] rounded-[10px] 6xs:w-[503px] w-full pb-1 px-2 3xs:!pt-1 !pt-3 flex 3xs:flex-row flex-col gap-3 items-center">
+                                <div class="bg-[rgba(126,87,194,0.60)] h-[31px] w-[31px] rounded-md flex justify-center items-center">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_24_759)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20.5C11.7659 20.5 18 12.5733 18 8.27778C18 3.98223 14.4183 0.5 10 0.5C5.58172 0.5 2 3.98223 2 8.27778C2 12.5733 8.2341 20.5 10 20.5ZM10 11.6111C11.8935 11.6111 13.4285 10.1187 13.4285 8.27778C13.4285 6.43683 11.8935 4.94445 10 4.94445C8.10645 4.94445 6.57145 6.43683 6.57145 8.27778C6.57145 10.1187 8.10645 11.6111 10 11.6111Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_24_759">
+                                                <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="text-[#2f2f2f] 3xs:text-left text-center font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold">
+                                    Ralegate, Daulotpur, Khulna9000, Bangladesh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="bg-[rgba(255,255,255,0.50)] rounded-[30px] border-solid border-[rgba(178,178,178,0.73)] border-2 h-auto pb-11 mt-24 overflow-hidden mb-20" style="backdrop-filter: blur(2px)">
+                	<!-- contact hero background start -->
+                	<div class=" absolute top-0 left-0 -z-20">
+                		<svg width="384" height="244" viewBox="0 0 384 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+                			<path d="M58.7936 221.361C98.175 240.429 142.236 247.682 185.652 242.244C229.068 236.805 269.979 218.908 303.44 190.716C336.902 162.524 361.481 125.243 374.207 83.3795C386.934 41.5164 387.263 -3.13678 375.154 -45.1827L372.089 -44.3C384.027 -2.84619 383.703 41.1782 371.156 82.4519C358.609 123.726 334.375 160.481 301.385 188.277C268.395 216.072 228.06 233.717 185.256 239.079C142.451 244.441 99.0104 237.29 60.1835 218.49L58.7936 221.361Z" fill="url(#paint0_linear_319_2)" fill-opacity="0.2"/>
+                			<path d="M15.0558 103.708C35.777 137.947 68.1372 163.576 106.212 175.904C144.286 188.232 185.527 186.433 222.383 170.838C259.24 155.242 289.246 126.893 306.908 90.9809C324.57 55.0687 328.706 13.9964 318.559 -24.7162L316.291 -24.1217C326.296 14.0458 322.218 54.5397 304.804 89.9462C287.391 125.353 257.807 153.302 221.47 168.678C185.132 184.054 144.472 185.827 106.934 173.673C69.3956 161.519 37.491 136.251 17.0616 102.494L15.0558 103.708Z" fill="url(#paint1_linear_319_2)" fill-opacity="0.2"/>
+                			<path d="M112.648 124.587C131.653 131.812 152.236 133.802 172.264 130.353C192.293 126.904 211.04 118.141 226.564 104.97C242.087 91.8 253.824 74.7012 260.558 55.4445C267.292 36.1878 268.779 15.4732 264.865 -4.55457L263.29 -4.24401C267.149 15.5018 265.683 35.9247 259.044 54.9102C252.404 73.8958 240.833 90.7537 225.528 103.739C210.223 116.724 191.74 125.364 171.993 128.764C152.247 132.165 131.954 130.202 113.216 123.079L112.648 124.587Z" fill="url(#paint2_linear_319_2)" fill-opacity="0.2"/>
+                			<defs>
+                				<linearGradient id="paint0_linear_319_2" x1="-163.255" y1="17.0243" x2="532.713" y2="-9.08554" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                				<linearGradient id="paint1_linear_319_2" x1="-78.2868" y1="17.1504" x2="433.319" y2="-2.04302" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                				<linearGradient id="paint2_linear_319_2" x1="-8.43958" y1="17.2596" x2="341.853" y2="4.17539" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                			</defs>
+                		</svg>
+                	</div>
+
+                	<div class="bg-[rgba(255,255,255,0.80)] rounded-[50%] h-[1418px] w-[1418px] absolute top-3 left-[50%] -translate-x-2/4 blur-[65.1px] -z-10"></div>
+
+                	<div class="absolute top-[50%] left-[50%] -translate-x-2/4 -translate-y-2/4 -z-20">
+                		<svg width="839" height="839" viewBox="0 0 839 839" fill="none" xmlns="http://www.w3.org/2000/svg">
+                			<path d="M0.914098 419.043C0.914118 187.612 188.526 5.87583e-06 419.957 2.55009e-05C651.388 4.51259e-05 839 187.612 839 419.043C839 650.474 651.388 838.086 419.957 838.086C188.526 838.086 0.914078 650.474 0.914098 419.043ZM833.973 419.043C833.973 190.388 648.612 5.02696 419.957 5.02694C191.302 5.02692 5.94103 190.388 5.94101 419.043C5.941 647.698 191.302 833.059 419.957 833.059C648.612 833.059 833.973 647.698 833.973 419.043Z" fill="url(#paint0_linear_280_33)" fill-opacity="0.2"/>
+                			<path d="M124.773 297.036C192.364 133.801 379.485 56.2664 542.72 123.857C705.954 191.448 783.489 378.569 715.898 541.804C648.307 705.039 461.186 782.573 297.951 714.982C134.717 647.391 57.182 460.27 124.773 297.036ZM710.798 539.692C777.222 379.274 701.026 195.382 540.608 128.957C380.19 62.5328 196.298 138.729 129.873 299.147C63.4484 459.565 139.645 643.458 300.063 709.882C460.481 776.307 644.373 700.11 710.798 539.692Z" fill="url(#paint1_linear_280_33)" fill-opacity="0.2"/>
+                			<path d="M634.211 479.488C600.886 597.608 478.115 666.349 359.994 633.024C241.874 599.699 173.133 476.928 206.458 358.807C239.783 240.687 362.554 171.946 480.675 205.271C598.795 238.596 667.536 361.367 634.211 479.488ZM209.47 359.657C176.614 476.114 244.386 597.157 360.844 630.012C477.301 662.868 598.343 595.095 631.199 478.638C664.055 362.181 596.282 241.139 479.825 208.283C363.368 175.427 242.325 243.2 209.47 359.657Z" fill="url(#paint2_linear_280_33)" fill-opacity="0.2"/>
+                			<defs>
+                				<linearGradient id="paint0_linear_280_33" x1="420.837" y1="-174.379" x2="469.142" y2="1113.22" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                				<linearGradient id="paint1_linear_280_33" x1="594.269" y1="1.11993" x2="252.289" y2="923.404" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                				<linearGradient id="paint2_linear_280_33" x1="334.435" y1="721.899" x2="495.188" y2="57.7644" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                			</defs>
+                		</svg>
+                	</div>
+
+                	<div class=" absolute bottom-0 right-0 -z-20">
+                		<svg width="432" height="267" viewBox="0 0 432 267" fill="none" xmlns="http://www.w3.org/2000/svg">
+                			<path d="M425.511 106.037C392.406 77.4264 351.724 59.0165 308.38 53.0328C265.036 47.049 220.887 53.7477 181.269 72.319C141.651 90.8903 108.26 120.539 85.1322 157.682C62.0044 194.825 50.1299 237.871 50.9439 281.619L54.1328 281.559C53.3302 238.428 65.0375 195.988 87.8397 159.368C110.642 122.748 143.563 93.5166 182.623 75.2068C221.683 56.897 265.21 50.2927 307.944 56.1922C350.677 62.0917 390.787 80.2424 423.425 108.45L425.511 106.037Z" fill="url(#paint0_linear_320_3)" fill-opacity="0.2"/>
+                			<path d="M437.308 231.001C426.154 192.566 401.53 159.435 367.944 137.673C334.357 115.91 294.056 106.974 254.419 112.499C214.782 118.024 178.461 137.64 152.106 167.758C125.751 197.875 111.125 236.477 110.907 276.497L113.252 276.51C113.467 237.053 127.886 198.995 153.87 169.302C179.854 139.609 215.664 120.268 254.743 114.821C293.822 109.374 333.555 118.184 366.669 139.64C399.782 161.096 424.06 193.761 435.056 231.654L437.308 231.001Z" fill="url(#paint1_linear_320_3)" fill-opacity="0.2"/>
+                			<path d="M348.444 185.575C331.957 173.677 312.591 166.427 292.352 164.575C272.113 162.723 251.737 166.336 233.333 175.039C214.93 183.743 199.168 197.222 187.679 214.079C176.19 230.937 169.392 250.561 167.99 270.919L169.592 271.027C170.975 250.955 177.677 231.608 189.004 214.987C200.33 198.367 215.871 185.078 234.015 176.497C252.16 167.916 272.249 164.354 292.203 166.18C312.156 168.006 331.25 175.154 347.505 186.884L348.444 185.575Z" fill="url(#paint2_linear_320_3)" fill-opacity="0.2"/>
+                			<defs>
+                				<linearGradient id="paint0_linear_320_3" x1="587.107" y1="360.882" x2="-91.9039" y2="205.972" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                				<linearGradient id="paint1_linear_320_3" x1="505.067" y1="338.768" x2="5.92635" y2="224.894" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                				<linearGradient id="paint2_linear_320_3" x1="437.628" y1="320.585" x2="95.8845" y2="242.561" gradientUnits="userSpaceOnUse">
+                					<stop offset="0.105226" stop-color="#B39DDB"/>
+                					<stop offset="0.488641" stop-color="#7E57C2"/>
+                					<stop offset="0.809876" stop-color="#55437A"/>
+                				</linearGradient>
+                			</defs>
+                		</svg>
+                	</div>
+                	<!-- contact hero background end -->
+                	<div class="3xs:px-14 px-7 3xs:pt-24 pt-16">
+                		<div class="flex 3md:flex-row flex-col 3md:gap-0 gap-7 items-center">
+                			<div class="3md:w-44">
+                				<div class="rounded-[50%] w-28 h-28 flex justify-center items-center" style="background: linear-gradient(258.6deg,rgba(176, 133, 245, 0.6) 22.40646779537201%,rgba(126, 87, 194, 0.6) 47.950759530067444%,rgba(0, 85, 127, 0.6) 100%);">
+                					<div class="text-white">
+                						<svg width="62" height="62" viewBox="0 0 62 62" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                							<path d="M54.25 11.625H7.75C5.6127 11.625 3.875 13.3627 3.875 15.5V46.5C3.875 48.6373 5.6127 50.375 7.75 50.375H42.6613L54.2621 58.1068L54.25 50.375C56.3873 50.375 58.125 48.6373 58.125 46.5V15.5C58.125 13.3627 56.3873 11.625 54.25 11.625Z"/>
+                							<path d="M38.75 31C38.75 23.4074 35.6318 16.5475 30.6064 11.625H7.75C5.6127 11.625 3.875 13.3627 3.875 15.5V46.5C3.875 48.6373 5.6127 50.375 7.75 50.375H30.6064C35.6318 45.4525 38.75 38.5926 38.75 31Z"/>
+                							<path d="M11.625 31C11.625 32.0277 12.0333 33.0133 12.76 33.74C13.4867 34.4667 14.4723 34.875 15.5 34.875C16.5277 34.875 17.5133 34.4667 18.24 33.74C18.9667 33.0133 19.375 32.0277 19.375 31C19.375 29.9723 18.9667 28.9867 18.24 28.26C17.5133 27.5333 16.5277 27.125 15.5 27.125C14.4723 27.125 13.4867 27.5333 12.76 28.26C12.0333 28.9867 11.625 29.9723 11.625 31Z" fill="#B39DDB"/>
+                							<path d="M27.125 31C27.125 32.0277 27.5333 33.0133 28.26 33.74C28.9867 34.4667 29.9723 34.875 31 34.875C32.0277 34.875 33.0133 34.4667 33.74 33.74C34.4667 33.0133 34.875 32.0277 34.875 31C34.875 29.9723 34.4667 28.9867 33.74 28.26C33.0133 27.5333 32.0277 27.125 31 27.125C29.9723 27.125 28.9867 27.5333 28.26 28.26C27.5333 28.9867 27.125 29.9723 27.125 31Z" fill="#B085F5"/>
+                							<path d="M42.625 31C42.625 32.0277 43.0333 33.0133 43.76 33.74C44.4867 34.4667 45.4723 34.875 46.5 34.875C47.5277 34.875 48.5133 34.4667 49.24 33.74C49.9667 33.0133 50.375 32.0277 50.375 31C50.375 29.9723 49.9667 28.9867 49.24 28.26C48.5133 27.5333 47.5277 27.125 46.5 27.125C45.4723 27.125 44.4867 27.5333 43.76 28.26C43.0333 28.9867 42.625 29.9723 42.625 31Z" fill="#7E57C2"/>
+                						</svg>
+                					</div>
+                				</div>
+                			</div>
+                			<div class="text-[#2f2f2f] text-left font-jura text-4xl leading-[46px] font-bold w-full">
+                				Get in touch to discuss your project, request a quote or even just to pick our
+                				brains.
+                			</div>
+                		</div>
+                		<div>
+                			<div class="font-jura text-left text-2xl leading-[46px] font-bold pt-20 pb-5" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">1. Tell us about your company</div>
+                			<input type="text" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-[54px] text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="Type Your Name">
+                			<div class="flex 7xs:flex-row flex-col 7xs:gap-5">
+                				<input type="text" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-[54px] text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="Phone number">
+                				<input type="text" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-[54px] text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="Email">
+                			</div>
+                			<input type="text" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-[54px] text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="Company Name Or Website">
+
+                			<div class="font-jura text-left text-2xl leading-[46px] font-bold pb-5 pt-7" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">2. Tell us more about your project</div>
+                			<textarea name="" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-32 text-[#2f2f2f] text-left font-jura text-sm py-4 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="Discribe Your Project Briefly"></textarea>
+                			<input type="text" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-[54px] text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="Please Choose The Budget">
+                			<div id="file-uploader" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border 3sm:h-[74px] text-[#2f2f2f] text-left  text-sm md:leading-10 font-bold w-full 3sm:p-5 p-9 focus:ring-0 focus:outline-none flex 3sm:flex-row flex-col items-center justify-between 3sm:gap-0 gap-3 cursor-pointer mb-5">
+                				<div class="flex 3sm:flex-row flex-col items-center 3sm:gap-5 gap-3">
+                					<div>
+                						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                							<g clip-path="url(#clip0_280_68)">
+                								<path d="M11.2 16.8H16.8V8.40002H21L14 1.40002L7 8.40002H11.2V16.8ZM27.0732 18.9448C26.7792 18.6312 24.8178 16.5326 24.2578 15.9852C23.8656 15.6087 23.3427 15.3989 22.799 15.4H20.3392L24.6288 19.5916H19.6672C19.5997 19.5898 19.5329 19.6061 19.4738 19.6389C19.4147 19.6716 19.3655 19.7196 19.3312 19.7778L18.1888 22.4H9.8112L8.6688 19.7778C8.63348 19.7206 8.58402 19.6734 8.52517 19.6407C8.46632 19.6081 8.40007 19.5912 8.3328 19.5916H3.3712L7.6594 15.4H5.201C4.6452 15.4 4.1146 15.6226 3.7422 15.9852C3.1822 16.534 1.2208 18.6326 0.926798 18.9448C0.242198 19.6742 -0.134402 20.2552 0.0447977 20.9734L0.830198 25.277C1.0094 25.9966 1.7976 26.5874 2.583 26.5874H25.4198C26.2052 26.5874 26.9934 25.9966 27.1726 25.277L27.958 20.9734C28.1344 20.2552 27.7592 19.6742 27.0732 18.9448Z" fill="#2F2F2F"/>
+                							</g>
+                							<defs>
+                								<clipPath id="clip0_280_68">
+                									<rect width="28" height="28" fill="white"/>
+                								</clipPath>
+                							</defs>
+                						</svg>
+                					</div>
+                					<div class="font-jura md:text-left text-center">Drag Image Or Brows to Upload (Optional)</div>
+                				</div>
+                				<button type="button" class="rounded-xl !w-[124px] h-12 text-[#ffffff] text-left font-jura text-base leading-10 font-bold flex justify-center items-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                					Upload
+                				</button>
+                				<input type="file" id="file-input" class="hidden">
+                			</div>
+                			<div class="font-jura text-left text-2xl leading-[46px] font-bold  pt-7 pb-5" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">3. Where did you here about us</div>
+                			                			<textarea name="" class="bg-[rgba(237,237,237,0.60)] rounded-xl border-dashed border-[#b2b2b2] border h-32 text-[#2f2f2f] text-left font-jura text-sm py-4 font-bold w-full px-5 focus:ring-0 focus:outline-none mb-5" placeholder="How Did You Here About Us"></textarea>
+                			<div class="font-jura text-left text-2xl leading-[46px] font-bold pt-9 pb-5" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">4. Schedule a call with our tech expert. Get a detailed tech consultation for free!</div>
+                			<div class="flex 4xs:flex-row flex-col justify-between items-center 4xs:gap-0 gap-3">
+                				<div class="text-[#2f2f2f] text-left font-jura text-xl leading-10 font-bold">
+                					Select A Day
+                				</div>
+                				<div class="bg-[#f4f4f4] rounded-xl xs7:w-[189px] w-full xs7:h-[50px] flex xs7:flex-row flex-col items-center justify-center gap-3 p-5">
+                					<div class="rounded-[50%] shrink-0 w-[18px] h-[18px]" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));"></div>
+                					<div class="text-[#2f2f2f] text-left font-jura text-sm xs7:leading-10 font-bold">
+                						30 min meeting
+                					</div>
+                				</div>
+                			</div>
+
+                			<div class="days-slider">
+                				<div class="swiper days-select-slider mt-7">
+                					<div class="swiper-wrapper">
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                						<div class="swiper-slide p-[.5rem]">
+                							<button type="button" class="group bg-[#B085F5] hover:bg-[#D9D9D9] !w-full px-3 py-2 rounded-2xl transition-all duration-200 ease-linear">
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-sm font-bold pb-1">
+                									MON
+                								</div>
+                								<div class="text-white group-hover:text-[#2f2f2f] 2md:text-left text-center font-jura text-xs font-bold ">
+                									Nov 01
+                								</div>
+                							</button>
+                						</div>
+                					</div>
+                				</div>
+                				<div class="days-select-swiper-next-or-preview-btn">    
+                					<div class="swiper-button-prev"></div>
+                					<div class="swiper-button-next"></div>
+                				</div>
+                			</div>
+
+                			<div class=" flex md:flex-row flex-col justify-between items-center md:gap-0 gap-5 xs3:pt-11 pt-16">
+                				<div class="flex xs3:flex-row flex-col items-center 4xs:gap-3 gap-1">
+                					<div class="text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold">
+                						Time zone -
+                					</div>
+                					<button type="button" class="bg-[#f4f4f4] rounded-lg !w-[111px] h-9 flex flex-row justify-between items-center  px-[.35rem]">
+                						<div class="text-[#515151] text-left font-Jaldi text-base leading-10 font-normal ps-3">
+                							EST
+                						</div>
+                						<div class="rounded-md w-10 h-[26px] flex flex-row items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                							<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.707 7.7071C7.51947 7.89457 7.26517 7.99988 7 7.99988C6.73484 7.99988 6.48053 7.89457 6.293 7.7071L0.636001 2.0501C0.540491 1.95785 0.464308 1.84751 0.411899 1.7255C0.35949 1.6035 0.331904 1.47228 0.33075 1.3395C0.329596 1.20672 0.354898 1.07504 0.405179 0.952145C0.455461 0.829248 0.529715 0.717596 0.623607 0.623703C0.7175 0.52981 0.82915 0.455557 0.952046 0.405276C1.07494 0.354995 1.20662 0.329694 1.3394 0.330848C1.47218 0.332002 1.6034 0.359588 1.72541 0.411997C1.84741 0.464406 1.95775 0.540588 2.05 0.636098L7 5.5861L11.95 0.636098C12.1386 0.45394 12.3912 0.353146 12.6534 0.355424C12.9156 0.357703 13.1664 0.462872 13.3518 0.64828C13.5372 0.833688 13.6424 1.0845 13.6447 1.3467C13.647 1.60889 13.5462 1.8615 13.364 2.0501L7.707 7.7071Z" fill="white"/>
+                							</svg>
+                						</div>
+                					</button>
+                				</div>
+                				<div class="flex 4xs:flex-row flex-col items-center 4xs:gap-3 gap-1">
+                					<div class="text-[#2f2f2f] text-left font-jura text-sm xs8:leading-10 font-bold">
+                						Schedule Meeting -
+                					</div>
+                					<button type="button" class="bg-[#f4f4f4] rounded-lg xs8:h-9 flex xs8:flex-row flex-col items-center xs8:gap-3 gap-2 xs8:py-0 py-3 xs8:px-[.35rem] px-3 xs4:w-auto w-full">
+                						<div class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2">
+                							06 : 00 AM - 07 : 00 AM
+                						</div>
+                						<div class="rounded-md w-10 h-[26px] flex items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                							<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.70694 7.7071C7.51941 7.89457 7.2651 7.99988 6.99994 7.99988C6.73478 7.99988 6.48047 7.89457 6.29294 7.7071L0.63594 2.0501C0.54043 1.95785 0.464247 1.84751 0.411838 1.7255C0.359429 1.6035 0.331843 1.47228 0.330689 1.3395C0.329535 1.20672 0.354837 1.07504 0.405118 0.952145C0.455399 0.829248 0.529654 0.717596 0.623546 0.623703C0.717439 0.52981 0.829089 0.455557 0.951985 0.405276C1.07488 0.354995 1.20656 0.329694 1.33934 0.330848C1.47212 0.332002 1.60334 0.359588 1.72535 0.411997C1.84735 0.464406 1.95769 0.540588 2.04994 0.636098L6.99994 5.5861L11.9499 0.636098C12.1385 0.45394 12.3911 0.353146 12.6533 0.355424C12.9155 0.357703 13.1664 0.462872 13.3518 0.64828C13.5372 0.833688 13.6423 1.0845 13.6446 1.3467C13.6469 1.60889 13.5461 1.8615 13.3639 2.0501L7.70694 7.7071Z" fill="white"/>
+                							</svg>
+                						</div>
+                					</button>
+                				</div>
+                			</div>
+
+                			<button type="button" class="ms-auto mt-16 rounded-xl pt-[9px] pr-[41px] pb-[9px] pl-[41px] flex flex-row gap-2.5 items-center justify-center xs5:w-[142px] w-full h-[61px] text-[#ffffff] text-left font-jura text-base leading-10 font-bold" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                				Submit
+                			</button>
+                		</div>
+                	</div>
+                </div>
+    		</div>
+    	</div>
+    </main>
+    
+    
+<!-- ====== Footer Section Start -->
+<footer class="relative bg-[#f4f4f4] dark:bg-dark pt-20 pb-7 lg:pt-[120px]">
+    <!-- footer background start -->
+    <img src="../assets/images/footer-background1.png" alt="footer background 1" class=" absolute top-0 left-0 h-[430px] w-[430px]">
+    <img src="../assets/images/footer-background2.png" alt="footer background 1" class=" absolute bottom-0 right-0 !h-[262px] !w-[262px]">
+
+    <!-- footer background end -->
+    <div class="2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto">
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
+                <div class="w-full mb-10">
+                    <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
+                        <div class="text-left font-jura text-[40px] font-bold relative self-stretch" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                            LOGO
+                        </div>
+                    </a>
+                    <div class="text-[#515151] text-left font-['Jaldi-Regular',_sans-serif] text-base leading-[26px] font-normal pb-7">
+                        Lorem ipsum dolor sit amet consectetur. Et vel vel dui pulvinar id in
+                        ullamcorper viverra.
+                    </div>
+
+
+                    <p class="flex flex-wrap gap-5 items-center text-sm font-medium text-dark dark:text-white">
+                        <img src="../assets/images/linkedin.png" alt="linkedin" class="w-6 h-6 rounded-md">
+                        <img src="../assets/images/facebook.png" alt="linkedin" class="w-6 h-6 rounded-md">
+                        <img src="../assets/images/instagram.png" alt="linkedin" class="w-6 h-6 rounded-md">
+                    </p>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl font-bold relative flex-1">
+                            Page
+                        </div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Price
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Blogs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
+
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl font-bold relative flex-1">
+                            Company
+                        </div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                UI/UX Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Lorem Ip
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Lorem Ipsum
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Lorem Ips
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
+
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl font-bold relative flex-1">
+                            Quick Links
+                        </div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                naimul46823@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Info00@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                +880 1953683518
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                +880 0000000000
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+                <div class="w-full mb-10">
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl leading-[30px] font-bold relative w-[184px]">
+                            Get The Letest Information
+                        </div>
+                    </h4>
+                    <div class="flex items-center mb-6">
+                        <div class="shrink-0 w-[296px] h-[47px] relative">
+                            <img class="rounded-none w-[296px] h-[47px] absolute left-0 top-0 overflow-visible" src="subtract0.svg" />
+                            <div class="w-[82px] h-[37px] static">
+                                <img class="rounded-none w-[82px] h-[34px] absolute left-[207px] top-[7px] overflow-visible" src="subtract1.svg" />
+                                <div class="flex flex-row gap-1 items-center justify-start absolute left-[215px] top-[5px]">
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+                                        <div class="text-[#ffffff] text-right font-['Jura-Bold',_sans-serif] text-sm font-bold relative">
+                                            Send
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-[#515151] text-left font-['Jaldi-Regular',_sans-serif] text-sm font-normal absolute left-8 top-3">
+                                Email address
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-[#B085F5] sm:mx-auto dark:border-gray-700 lg:my-5" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="text-left text-sm font-normal">
+                <span>
+                    <span class="font-jura text-[#2F2F2F]">
+                        Copyright ©2024 All rights reserved | This Website is made with
+                    </span>
+                    <span class="font-jura text-[#7E57C2]">
+                        by Naimul islam
+                    </span>
+                </span>
+            </div>
+
+            <div class="flex flex-row gap-[25px] items-center justify-start shrink-0">
+                <div class=" text-[#7e57c2] text-right font-jura text-base leading-[22px] font-medium">
+                    Privacy policy
+                </div>
+                <div class="text-[#7e57c2] text-right font-jura text-base leading-[22px] font-medium">
+                    Terms &amp; conditions
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ====== Footer Section End -->
+
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    	const fileUploader = document.getElementById("file-uploader");
+    	const fileInput = document.getElementById("file-input");
+
+    	function fileUpload()
+    	{
+    		fileInput.click();
+    	}
+
+    	fileUploader.addEventListener("click", fileUpload)
+
+    	// document.documentElement.classList.add('dark');
+
+        var swiper = new Swiper(".days-select-slider", {
+            breakpoints: {
+                1325: {
+                    slidesPerView: 12,
+                },
+                1125: {
+                    slidesPerView: 10,
+                },
+                1024: {
+                    slidesPerView: 8,
+                },
+                775: {
+                    slidesPerView: 6,
+                },
+                600: {
+                    slidesPerView: 4,
+                },
+                510: {
+                    slidesPerView: 3,
+                },
+                375: {
+                    slidesPerView: 2,
+                },
+                335: {
+                    slidesPerView: 3,
+                },
+                250: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },    
+             navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                clickable: true,
+            },    
+            centeredSlides: false,
+            grabCursor: true,
+             loop: true,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true, // Pause on hover
+                waitForTransition: true, // Wait for transition to end before next slide
+                reverseDirection: false, // Reverse direction of autoplay
+                stopOnLastSlide: false // Stop autoplay when it reaches last slide
+            }
+        });
+
+
+        const timeZones = Intl.supportedValuesOf("timeZone");
+        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+       	const matchingTimeZone = timeZones.find(zone => zone === userTimeZone);
+		console.log(matchingTimeZone);
+    </script>
+</body>
+</html>

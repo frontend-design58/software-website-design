@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--flip animation-->
+    <link href="../dist/flip-animation.css" rel="stylesheet">
+    <title>Document</title>
+    <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="../dist/our-client-happy-swiper.css">
+    <link href="../dist/style.css" rel="stylesheet">    
+
+    <style>
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+    
+</head>
+<body>
+    <header class="bg-[rgba(255,255,255,0.06)] overflow-hidden fixed top-0 left-0 right-0 z-50" style="box-shadow: 0px 4px 15px 0px rgba(47, 47, 47, 0.12)">
+        <nav class='2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto flex flex-row items-center justify-between py-4'>
+            <a href="" class="">
+                <img src="../assets/images/LOGO.png" alt="app logo" class="w-28">
+            </a>
+            <div class="flex flex-row items-center gap-9">
+                <div class="6md:flex hidden flex-row gap-10 items-center justify-start relative">
+                    <a href="./index.html">
+                        <div class="text-[#7e57c2] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold relative">
+                        Home
+                    </div>
+                    </a>
+                   <a href="./about.html">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        About
+                    </div>
+                   </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Services
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Pricing
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Works
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="text-[#515151] text-left font-['Jura-Regular',_sans-serif] text-base font-normal relative">
+                        Blogs
+                    </div>
+                    </a>
+                </div>
+                <a href="">
+                    <div class="rounded-xl w-[144.76px] h-[54.37px] flex justify-center items-center text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold" style="background: linear-gradient(
+                              259.34deg,
+                              rgba(176, 133, 245, 1) 23.114068806171417%,
+                              rgba(126, 87, 194, 1) 47.950759530067444%,
+                              rgba(0, 85, 127, 1) 100%
+                            );">
+                        Book Now
+                    </div>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+   
+    <main class="">
+
+        <div class="hero-area relative">
+            <img src="../assets/images/background-frame.png" alt="banner area" class=" absolute top-0 left-0 right-0 -z-30  lg:block hidden h-screen w-full">
+            <div class="relative -z-20 absolute 6xs:-top-[6.5rem] -top-[7.5rem] 6xs:-left-56 xs4:-left-80 -left-96 ">
+                <div class="rounded-[50%] w-[646px] h-[646px] border-[3px] border-[#bdafd8]  absolute left-[646px] top-[646px]" style="
+                                                                                                                                       transform-origin: 0 0;
+                                                                                                                                       transform: rotate(-180deg) scale(1, 1);
+                                                                                                                                       "></div>
+                <div class="rounded-[50%] w-[480.7px] h-[480.7px] border-[3px] border-[#bdafd8]  absolute left-[453.4px] top-[637.31px]" style="
+                                                                                                                                                transform-origin: 0 0;
+                                                                                                                                                transform: rotate(-157.507deg) scale(1, 1);
+                                                                                                                                                "></div>
+                <div class="rounded-[50%] w-[327.79px] h-[327.79px] border-[3px] border-[#bdafd8] absolute left-[210.05px] top-[120.84px]" style="
+                                                                                                                                                  transform-origin: 0 0;
+                                                                                                                                                  transform: rotate(15.755deg) scale(1, 1);
+                                                                                                                                                  "></div>
+            </div>
+
+            <div class="polygon-circle h-[492.84px] 6xs:w-[492.84px] w-full -z-10 absolute -top-5 6xs:left-11 left-0"></div>
+
+            <div class="polygon-egg-circle rounded-[50%] h-[504.85px] w-[304px] absolute lg:top-36 sm:top-[600px] 6xs:top-[630px] top-[850px] lg:right-7 4md:right-44 2md:right-32 md:right-24 sm:right-20 6xs:right-16 right-0 -z-10"></div>
+
+            <div class="flex lg:flex-row flex-col 2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] lg:h-screen 6xs:h-[175vh] 3xs:h-[195vh] xs:h-[201vh] xs6:h-[211vh] h-[231vh] mx-auto pt-48">
+                <!--hero left side start-->
+                <div class="lg:w-6/12 w-full pt-3">
+                    <div>
+                        <div class="6xs:w-[500px] w-full flex flex-wrap leading-[4rem] lg:mx-0 mx-auto">
+                            <span class=" space-y-6 lg:text-left text-center">
+                                <span class="text-[#2f2f2f] text-6xl font-bold font-jura">Lorem</span>
+                                <span class="text-[#7e57c2] text-6xl font-bold font-jura ps-3">Ipsum</span>
+                                <span>
+                                    <span class="text-[#2f2f2f] text-6xl font-bold font-jura">Dolor Sit</span>
+                                    <span class="text-[#7e57c2] text-6xl font-bold font-jura ps-3">Amet</span>
+                                </span>
+                            </span>
+                            <span class="flex 6xs:flex-row flex-col lg:justify-start justify-center items-center gap-7 6xs:w-auto w-full">
+                                <span class="text-[#2f2f2f] text-6xl font-bold font-jura">Conse</span>
+                                <span class="">
+                                    <button type="button" class="relative">
+                                        <div class="bg-[rgba(47,47,47,0.40)] rounded-[32px] w-[232px] h-[66px] flex justify-center items-center relative" style="backdrop-filter: blur(2px);">
+                                            <div class="text-[#ffffff] text-left font-[Jura-Bold,sans-serif] text-xl leading-10 font-semibold w-full ps-5">
+                                                OUR WORKS
+                                            </div>
+                                            <div class="bg-[rgba(173,87,194,0.80)] rounded-full w-[50.39px] h-[50.39px] absolute right-2 top-1/2 transform -translate-y-1/2 flex justify-center items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="text-[#515151] lg:text-left text-center font-['Jaldi-Regular',_sans-serif] text-2xl leading-10 font-normal xl:w-[690px] lg:w-full sm:w-[550px] w-full lg:mx-0 mx-auto mt-7">
+                            Lorem ipsum dolor sit amet consectetur. Sem enim magna rutrum nulla eget augue
+                            ipsum nec.
+                        </div>
+                        <div class="flex lg:justify-start justify-center">
+                            <a href="#" class="">
+                                <div class="rounded-[40px] border-solid border-[#7e57c2] border xs6:w-[290px] w-full h-[77px] flex items-center justify-between xs6:pe-[.4rem] mt-11">
+                                    <div class="rounded-[40px] flex items-center justify-center gap-2.5 items-start justify-start w-[205px] h-full relative" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+                                        <div class="text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-2xl leading-10 font-bold relative">
+                                            BOOK NOW
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-[50%] w-[64.4px] h-[64.4px]  xs6:flex hidden items-center justify-center" style="
+                                                                                                                             background: linear-gradient(
+                                                                                                                             -2.15deg,
+                                                                                                                             rgba(173, 87, 194, 0.8) 20.000000298023224%,
+                                                                                                                             rgba(118, 70, 169, 0.8) 47.77631759643555%,
+                                                                                                                             rgba(20, 17, 104, 0.8) 93.79166960716248%
+                                                                                                                             );
+                                                                                                                             ">
+                                        <!--<img src="../assets/images/right-arrow.png" alt="" class="w-11 h-14">-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--hero left side end-->
+
+                <!--hero right side start-->
+                <div class="lg:w-6/12 w-full flex lg:justify-end justify-center lg:pt-0 pt-20">
+                    <div class="3xs:w-auto w-full">
+                        <div class="bg-[#ffffff] w-auto rounded-[20px] border-solid border-[#b2b2b2] border p-7" style="backdrop-filter: blur(42.45px)">
+                            <div class="mb-5">
+                                <input type="text" class="bg-[rgba(237,237,237,0.60)] px-5 rounded-xl border-dashed border-[#b2b2b2] border h-[54px] 4xs:w-[373px] 3xs:w-[313px] w-full text-[#2f2f2f] text-left font-['Jura-Bold',_sans-serif] text-sm leading-10 font-bold focus:ring-0 focus:outline-none" placeholder="Name">
+                            </div>
+                            <div class="mb-5">
+                                <input type="text" class="bg-[rgba(237,237,237,0.60)] px-5 rounded-xl border-dashed border-[#b2b2b2] border h-[54px] 4xs:w-[373px] 3xs:w-[313px] w-full text-[#2f2f2f] text-left font-['Jura-Bold',_sans-serif] text-sm leading-10 font-bold focus:ring-0 focus:outline-none" placeholder="Number">
+                            </div>
+                            <div class="mb-5">
+                                <input type="text" class="bg-[rgba(237,237,237,0.60)] px-5 rounded-xl border-dashed border-[#b2b2b2] border h-[54px] 4xs:w-[373px] 3xs:w-[313px] w-full text-[#2f2f2f] text-left font-['Jura-Bold',_sans-serif] text-sm leading-10 font-bold focus:ring-0 focus:outline-none" placeholder="Email">
+                            </div>
+                            <div class="mb-5">
+                                <textarea class="bg-[rgba(237,237,237,0.60)] px-5 rounded-xl border-dashed border-[#b2b2b2] border h-[92px] 4xs:w-[373px] 3xs:w-[313px] w-full text-[#2f2f2f] text-left font-['Jura-Bold',_sans-serif] text-sm leading-10 font-bold focus:ring-0 focus:outline-none" placeholder="Message"></textarea>
+                            </div>
+
+                            <button type="button" class="rounded-xl mx-auto xs6:w-[186.2px] w-full h-[60.77px] flex justify-center items-center text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                                Submit
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <!--hero right side end-->
+            </div>
+
+        </div>
+        <!--hero end-->
+
+        <div class="about-area bg-gradient-to-b from-[#f4f4f4] from-10% via-[#f4f4f4] via-30% to-[#f4f4f4]/50 to-90% pb-20 relative overflow-hidden">
+            <div class="h-full 2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto">
+                <div class="pt-20">
+                    <span class="text-[#7e57c2] text-5xl font-bold font-['Jura-Bold',_sans-serif]">About</span>
+                    <span class="text-[#2f2f2f] text-5xl font-bold font-['Jura-Bold',_sans-serif] ps-3">Us</span>
+                </div>
+                <div class="justify-center items-center gap-2.5 inline-flex pt-16">
+                    <div class=" text-[#515151] text-2xl font-normal font-Jaldi leading-10">Lorem ipsum dolor sit amet consectetur. Sem enim magna rutrum nulla eget augue ipsum nec. Ut fringilla id id fames vel urna sit sit facilisis.</div>
+                </div>
+                <div class="flex 5xs:flex-row flex-col justify-between 5xs:items-center pt-11 5xs:gap-0 gap-9">
+                    <div class="flex items-center -space-x-5 rtl:space-x-reverse">
+                        <img class="w-[62.26px] h-[62.72px] border-[4px] border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                        <img class="w-[62.26px] h-[62.72px] border-[4px] border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                        <img class="w-[62.26px] h-[62.72px] border-[4px] border-white rounded-full dark:border-gray-800" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                        <div class="rounded-[30px] xs6:w-[139.92px] w-[52.26px] xs6:h-[51.47px] h-[52.72px] flex items-center justify-center  text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800 flex items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));backdrop-filter: blur(16.25px);">
+                            <div class="text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-sm font-bold">
+                                20+ <span class="xs6:block hidden">Members</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="rounded-xl w-[146px] h-[62px] flex items-center justify-center text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                        See More
+                    </div>
+
+                </div>
+            </div>
+            <img src="../assets/images/about-area-background.png" alt="" class="absolute top-56 left-0 -z-20">
+        </div>
+        <!--about end-->
+
+
+        <div class="what-service relative">
+            <!--what service background area start-->
+            <img src="../assets/images/what-service-area.png" alt="" class="absolute w-full left-0 -top-16 -z-20">
+            <div class="bg-[#ffffff] rounded-[20%] h-[536px] w-full absolute top-0 left-0 right-0 -z-0" style="filter: blur(90.05px)"></div>
+            <div class=" absolute top-[81.5%] right-16 -z-10" style="transform: translateY(-50%)">
+                <div class="relative w-full">
+                    <div class="rounded-[50%] w-[1120.71px] h-[1120.71px] border-[4px] border-gray-300 absolute left-[50%] top-[50%]" style="transform: translate(-50%, -50%)"></div>
+                    <div class="rounded-[50%] w-[855.55px] h-[855.55px] border-[4px] border-gray-300 absolute left-[50%] top-[50%]" style="transform: translate(-50%, -50%)"></div>
+                    <div class="rounded-[50%] w-[594.33px] h-[594.33px] border-[4px] border-gray-300 absolute left-[50%] top-[50%]" style="transform: translate(-50%, -50%)"></div>
+                </div>
+            </div>
+            <div class="bg-[#ffffff]/60 rounded-[10%] h-[536px] w-full absolute top-[500px] left-0 right-0 -z-0"></div>
+            <!--what service background area end-->
+
+            <div class="2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto z-10 relative">
+                <div class="grid md:grid-cols-2 grid-cols-1 pt-32">
+                    <div>
+                        <div class=" text-5xl font-bold">
+                            <span class="text-[#2f2f2f] font-jura">What </span>
+                            <span class="text-[#7e57c2] font-jura">Services </span>
+                        </div>
+                        <div class="font-['Jura-Bold',_sans-serif] text-5xl font-bold">
+                            <span class="text-[#7e57c2] font-jura">We’re</span>
+                            <span class="text-[#2f2f2f] font-jura"> Offering</span>
+                        </div>
+                    </div>
+                    <div class="md:pt-0 pt-3">
+                        <div class="text-[#515151] text-xl font-normal font-jura leading-loose">Lorem ipsum dolor sit amet consectetur. Sem enim magna rutrum nulla eget augue ipsum nec. Ut fringilla id id fames vel urna sit sit facilisis.</div>
+                        <div class="flex 6md:flex-row mdLflex-col 4xs:flex-row flex-col 6md:items-center md:items-start 4xs:items-center items-start 6md:gap-11 md:gap-5 4xs:gap-11 gap-5 pt-9 ps-3">
+                            <div class="text-[#7e57c2] text-left text-xl font-bold flex items-center gap-3">
+                                <span class="font-jura">See All Services</span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 3C6 2.60156 6.1582 2.2207 6.43945 1.93945C7.02539 1.35352 7.97461 1.35352 8.56055 1.93945L17.5605 10.9395C17.8418 11.2207 18 11.6016 18 12C18 12.3984 17.8418 12.7793 17.5605 13.0605L8.56055 22.0605C7.97461 22.6465 7.02539 22.6465 6.43945 22.0605C6.1582 21.7793 6 21.3984 6 21C6 20.6016 6.1582 20.2207 6.43945 19.9395L14.3789 12L6.43945 4.06055C6.1582 3.7793 6 3.39844 6 3Z" fill="#7E57C2" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="text-[#7e57c2] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold flex items-center gap-3">
+                                <span class="font-jura">Call For Booking</span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 3C6 2.60156 6.1582 2.2207 6.43945 1.93945C7.02539 1.35352 7.97461 1.35352 8.56055 1.93945L17.5605 10.9395C17.8418 11.2207 18 11.6016 18 12C18 12.3984 17.8418 12.7793 17.5605 13.0605L8.56055 22.0605C7.97461 22.6465 7.02539 22.6465 6.43945 22.0605C6.1582 21.7793 6 21.3984 6 21C6 20.6016 6.1582 20.2207 6.43945 19.9395L14.3789 12L6.43945 4.06055C6.1582 3.7793 6 3.39844 6 3Z" fill="#7E57C2" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-9">
+                    <div class="bg-[#ffffff] rounded-3xl border-dashed border-[#515151] border pt-5 pr-6 pb-5 pl-6  shrink-0 mt-14 p-5 flex lg:flex-row flex-col justify-between 1xl:gap-20 gap-7" style="box-shadow: 0px 4px 20px 0px rgba(47, 47, 47, 0.15)">
+                        <div class="flex flex-wrap items-center justify-between w-full ">
+                            <div class="1xl:pb-0 pb-3">
+                                <div class="text-[#7e57c2] text-left font-jura text-[40px] font-bold relative">
+                                    UI/UX
+                                </div>
+                                <div class="text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal lg:w-[600px] w-full">
+                                    Lorem ipsum dolor sit amet consectetur. Sem enim magna rutrum nulla eget augue
+                                    ipsum nec. Ut fringilla id id fames vel urna sit sit facilisis.Lorem ipsum
+                                    dolor sit amet consectetur. Sem enim magna rutrum nulla eget augue ipsum nec.
+                                </div>
+                            </div>
+                            <img src="../assets/images/ui-ux.png" alt="" class="rounded-2xl shrink-0 xs2:w-[278px] w-full xs2:h-[158px] h-auto">
+                        </div>
+                        <div class="h-full">
+                            <div class="rounded-2xl w-[144.76px] h-[54.37px] text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold flex items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                                See More
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bg-[#f4f4f4] rounded-[20px] py-[23px] pr-6 pl-6 flex flex-row gap-2.5 items-center justify-between self-stretch shrink-0" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12), inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
+                        <div class="text-[#7e57c2] text-left font-jura xs:text-2xl xs4:text-xl xs6:text-lg text-sm font-medium relative">
+                            Lorem ipsum dolor .
+                        </div>
+                        <div class="rounded-[27px] border-solid border-[#7e57c2] border pt-[7px] pr-[11px] pb-[7px] pl-[11px] flex flex-row gap-2.5 items-center justify-start shrink-0 xs:w-[54px] xs4:w-[34px] w-[24px] xs:h-[54px] xs4:h-[34px] h-[24px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0">
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.0062 20.0062C0.87454 20.007 0.744026 19.9817 0.62214 19.9319C0.500254 19.8822 0.389393 19.8088 0.295916 19.7161C0.20215 19.6231 0.127727 19.5124 0.0769378 19.3905C0.0261489 19.2686 0 19.1379 0 19.0058C0 18.8737 0.0261489 18.743 0.0769378 18.6211C0.127727 18.4992 0.20215 18.3885 0.295916 18.2955L8.59922 10.0022L0.295916 1.70892C0.20264 1.61564 0.12865 1.50491 0.07817 1.38303C0.0276895 1.26116 0.00170728 1.13054 0.00170728 0.998632C0.00170728 0.732225 0.107537 0.476728 0.295916 0.288349C0.484295 0.0999706 0.739791 -0.00585938 1.0062 -0.00585938C1.27261 -0.00585937 1.5281 0.0999706 1.71648 0.288349L10.7201 9.29193C10.8138 9.38493 10.8883 9.49558 10.939 9.61749C10.9898 9.7394 11.016 9.87015 11.016 10.0022C11.016 10.1343 10.9898 10.265 10.939 10.3869C10.8883 10.5089 10.8138 10.6195 10.7201 10.7125L1.71648 19.7161C1.623 19.8088 1.51214 19.8822 1.39026 19.9319C1.26837 19.9817 1.13786 20.007 1.0062 20.0062Z" fill="#B085F5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bg-[#f4f4f4] rounded-[20px] py-[23px] pr-6 pl-6 flex flex-row gap-2.5 items-center justify-between self-stretch shrink-0" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12), inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
+                        <div class="text-[#7e57c2] text-left font-jura xs:text-2xl xs4:text-xl xs6:text-lg text-sm font-medium relative">
+                            Lorem ipsum dolor .
+                        </div>
+                        <div class="rounded-[27px] border-solid border-[#7e57c2] border pt-[7px] pr-[11px] pb-[7px] pl-[11px] flex flex-row gap-2.5 items-center justify-start shrink-0 xs:w-[54px] xs4:w-[34px] w-[24px] xs:h-[54px] xs4:h-[34px] h-[24px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0">
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.0062 20.0062C0.87454 20.007 0.744026 19.9817 0.62214 19.9319C0.500254 19.8822 0.389393 19.8088 0.295916 19.7161C0.20215 19.6231 0.127727 19.5124 0.0769378 19.3905C0.0261489 19.2686 0 19.1379 0 19.0058C0 18.8737 0.0261489 18.743 0.0769378 18.6211C0.127727 18.4992 0.20215 18.3885 0.295916 18.2955L8.59922 10.0022L0.295916 1.70892C0.20264 1.61564 0.12865 1.50491 0.07817 1.38303C0.0276895 1.26116 0.00170728 1.13054 0.00170728 0.998632C0.00170728 0.732225 0.107537 0.476728 0.295916 0.288349C0.484295 0.0999706 0.739791 -0.00585938 1.0062 -0.00585938C1.27261 -0.00585937 1.5281 0.0999706 1.71648 0.288349L10.7201 9.29193C10.8138 9.38493 10.8883 9.49558 10.939 9.61749C10.9898 9.7394 11.016 9.87015 11.016 10.0022C11.016 10.1343 10.9898 10.265 10.939 10.3869C10.8883 10.5089 10.8138 10.6195 10.7201 10.7125L1.71648 19.7161C1.623 19.8088 1.51214 19.8822 1.39026 19.9319C1.26837 19.9817 1.13786 20.007 1.0062 20.0062Z" fill="#B085F5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bg-[#f4f4f4] rounded-[20px] py-[23px] pr-6 pl-6 flex flex-row gap-2.5 items-center justify-between self-stretch shrink-0" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12), inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
+                        <div class="text-[#7e57c2] text-left font-jura xs:text-2xl xs4:text-xl xs6:text-lg text-sm font-medium relative">
+                            Lorem ipsum dolor .
+                        </div>
+                        <div class="rounded-[27px] border-solid border-[#7e57c2] border pt-[7px] pr-[11px] pb-[7px] pl-[11px] flex flex-row gap-2.5 items-center justify-start shrink-0 xs:w-[54px] xs4:w-[34px] w-[24px] xs:h-[54px] xs4:h-[34px] h-[24px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0">
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.0062 20.0062C0.87454 20.007 0.744026 19.9817 0.62214 19.9319C0.500254 19.8822 0.389393 19.8088 0.295916 19.7161C0.20215 19.6231 0.127727 19.5124 0.0769378 19.3905C0.0261489 19.2686 0 19.1379 0 19.0058C0 18.8737 0.0261489 18.743 0.0769378 18.6211C0.127727 18.4992 0.20215 18.3885 0.295916 18.2955L8.59922 10.0022L0.295916 1.70892C0.20264 1.61564 0.12865 1.50491 0.07817 1.38303C0.0276895 1.26116 0.00170728 1.13054 0.00170728 0.998632C0.00170728 0.732225 0.107537 0.476728 0.295916 0.288349C0.484295 0.0999706 0.739791 -0.00585938 1.0062 -0.00585938C1.27261 -0.00585937 1.5281 0.0999706 1.71648 0.288349L10.7201 9.29193C10.8138 9.38493 10.8883 9.49558 10.939 9.61749C10.9898 9.7394 11.016 9.87015 11.016 10.0022C11.016 10.1343 10.9898 10.265 10.939 10.3869C10.8883 10.5089 10.8138 10.6195 10.7201 10.7125L1.71648 19.7161C1.623 19.8088 1.51214 19.8822 1.39026 19.9319C1.26837 19.9817 1.13786 20.007 1.0062 20.0062Z" fill="#B085F5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bg-[#f4f4f4] rounded-[20px] py-[23px] pr-6 pl-6 flex flex-row gap-2.5 items-center justify-between self-stretch shrink-0" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12), inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
+                        <div class="text-[#7e57c2] text-left font-jura xs:text-2xl xs4:text-xl xs6:text-lg text-sm font-medium relative">
+                            Lorem ipsum dolor .
+                        </div>
+                        <div class="rounded-[27px] border-solid border-[#7e57c2] border pt-[7px] pr-[11px] pb-[7px] pl-[11px] flex flex-row gap-2.5 items-center justify-start shrink-0 xs:w-[54px] xs4:w-[34px] w-[24px] xs:h-[54px] xs4:h-[34px] h-[24px] p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0">
+                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.0062 20.0062C0.87454 20.007 0.744026 19.9817 0.62214 19.9319C0.500254 19.8822 0.389393 19.8088 0.295916 19.7161C0.20215 19.6231 0.127727 19.5124 0.0769378 19.3905C0.0261489 19.2686 0 19.1379 0 19.0058C0 18.8737 0.0261489 18.743 0.0769378 18.6211C0.127727 18.4992 0.20215 18.3885 0.295916 18.2955L8.59922 10.0022L0.295916 1.70892C0.20264 1.61564 0.12865 1.50491 0.07817 1.38303C0.0276895 1.26116 0.00170728 1.13054 0.00170728 0.998632C0.00170728 0.732225 0.107537 0.476728 0.295916 0.288349C0.484295 0.0999706 0.739791 -0.00585938 1.0062 -0.00585938C1.27261 -0.00585937 1.5281 0.0999706 1.71648 0.288349L10.7201 9.29193C10.8138 9.38493 10.8883 9.49558 10.939 9.61749C10.9898 9.7394 11.016 9.87015 11.016 10.0022C11.016 10.1343 10.9898 10.265 10.939 10.3869C10.8883 10.5089 10.8138 10.6195 10.7201 10.7125L1.71648 19.7161C1.623 19.8088 1.51214 19.8822 1.39026 19.9319C1.26837 19.9817 1.13786 20.007 1.0062 20.0062Z" fill="#B085F5" />
+                            </svg>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+            <!--what service end-->
+        </div>
+        <!--what service end-->
+        
+
+
+        <div class="our-working-process-area relative pb-28">
+            <!--our working process area start-->
+            <img src="../assets/images/our-woring-process-area-background1.png" alt="our working process area background effect image" class="h-[428px] w-full absolute top-[5.5rem] left-0 right-0 -z-20">
+            <img src="../assets/images/our-woring-process-area-plus.png" alt="plus 1" class="w-[160px] absolute top-[4.81rem] right-0 -z-0">
+            <img src="../assets/images/our-woring-process-area-plus.png" alt="plus 1" class="w-[160px] absolute top-[35.81rem] left-32 -z-0">
+            <div class="bg-[#ffffff] rounded-[10%] h-[607px] w-full absolute top-16 left-0 right-0 -z-10" style="filter: blur(76.15px)"></div>
+            <img src="../assets/images/our-working-process.png" alt="" class="w-full h-[365px] absolute top-[421px] left-0 right-0 -z-20 absolute">
+            <!--our working process area end-->
+            <div class="flex lg:flex-row flex-col 2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto pt-28 h-full">
+                <div class="lg:w-6/12 w-full">
+                    <div class="flex flex-row justify-center items-center pt-20">
+                        <img src="../assets/images/website1.png" alt="website" class="rounded-md shrink-0 w-[83px] h-[356px]">
+                        <img src="../assets/images/website2.png" alt="website" class="rounded-md shrink-0 w-[133px] h-[416px]">
+                        <img src="../assets/images/website3.png" alt="website" class="rounded-md shrink-0 w-[89px] h-[322px]">
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full">
+                    <div class="lg:text-left text-center font-['Jura-Bold',_sans-serif] text-5xl font-bold self-stretch pb-5 lg:pt-0 pt-24">
+                        <span>
+                            <span class="text-black">Our </span>
+                            <span class="text-[#7e57c2]">Working</span>
+                            <span class="text-black"> Process</span>
+                        </span>
+                    </div>
+                    <p class="text-[#515151] lg:text-left text-center font-['Jaldi-Regular',_sans-serif] text-xl leading-[34px] font-normal pb-3">
+                        Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                        tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                        ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                    </p>
+                    <p class="text-[#515151] lg:text-left text-center font-['Jaldi-Regular',_sans-serif] text-xl leading-[34px] font-normal pb-9">
+                        Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                        tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                        ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                        Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                        tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                        ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                    </p>
+                    <div class="flex lg:justify-start justify-center">
+                        <a href="">
+                            <div class="rounded-[40px] border-solid border-[#b085f5] border xs6:w-[288.52px] w-auto h-[76.61px] flex flex-row items-center justify-between xs6:pe-2">
+                                <div class="rounded-[40px] w-[203.95px] h-[76.61px] text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-xl leading-10 font-bold flex items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                                    See casestudy
+                                </div>
+                                <div class="rounded-[50%] w-[64.07px] h-[64.07px] xs6:flex hidden items-center justify-center" style="background: linear-gradient(-2.15deg,rgba(173, 87, 194, 0.8) 20.000000298023224%,rgba(118, 70, 169, 0.8) 47.77631759643555%,rgba(20, 17, 104, 0.8) 93.79166960716248%);">
+                                    <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.59809 28.865C1.4126 28.8661 1.22872 28.8305 1.057 28.7604C0.885278 28.6902 0.72909 28.5869 0.597391 28.4563C0.465287 28.3252 0.360433 28.1694 0.288877 27.9976C0.217322 27.8258 0.180481 27.6416 0.180481 27.4556C0.180481 27.2695 0.217322 27.0853 0.288877 26.9135C0.360433 26.7418 0.465287 26.5859 0.597391 26.4549L12.2958 14.7706L0.597391 3.08632C0.465977 2.95491 0.361734 2.7989 0.290613 2.6272C0.219492 2.45549 0.182886 2.27147 0.182886 2.08562C0.182886 1.71028 0.331988 1.35032 0.597391 1.08491C0.862794 0.819512 1.22276 0.67041 1.59809 0.67041C1.97343 0.67041 2.3334 0.819512 2.5988 1.08491L15.2838 13.7699C15.4159 13.9009 15.5207 14.0568 15.5923 14.2286C15.6638 14.4003 15.7007 14.5845 15.7007 14.7706C15.7007 14.9567 15.6638 15.1409 15.5923 15.3126C15.5207 15.4844 15.4159 15.6403 15.2838 15.7713L2.5988 28.4563C2.4671 28.5869 2.31091 28.6902 2.13919 28.7604C1.96747 28.8305 1.78359 28.8661 1.59809 28.865Z" fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--our working process end-->
+        
+        
+        
+        <div class="timeline-area relative h-full">
+           <!--background start-->
+            <img src="../assets/images/working-process-background2.png" alt="timeline background image 1" class=" absolute top-0 left-0 -z-20 w-full">
+            <div class="absolute left-[50%] top-[50%]  -translate-y-2/4 -translate-x-2/4 flex justify-center items-center">
+                <div class="relative h-[721.29px] w-[721.29px] -z-0">
+                    <div class="rounded-full w-[721.29px] h-[721.29px] border-[3px] border-gray-200 absolute left-[50%] top-[50%] -translate-y-2/4 -translate-x-2/4"></div>
+                    <div class="rounded-full w-[550.63px] h-[550.63px] border-[3px] border-gray-200 absolute left-[50%] top-[50%] -translate-y-2/4 -translate-x-2/4"></div>
+                    <div class="rounded-full w-[382.51px] h-[382.51px] border-[3px] border-gray-200 absolute left-[50%] top-[50%] -translate-y-2/4 -translate-x-2/4"></div>
+                </div>
+            </div>
+            <div class="bg-[#f4f4f4] rounded-[50%] h-[1068px] w-full absolute top-[50%] left-0 right-0 -translate-y-2/4 -z-10" style="filter: blur(96.05px)"></div>
+
+            <img src="../assets/images/timeline-background2.png" alt="timeline background image 2" class=" absolute bottom-0 left-0 -z-20 w-full">
+           <!--background end-->
+            <div>
+                <div class="bg-[#f4f4f4]/50 3lg:h-[1578px] 4md:h-[1675px] sm:h-[1875px] 4xs:h-[250vh] xs:h-[260vh] xs3:h-[280vh] xs5:h-[290vh] xs6:h-[300vh] xs7:h-[310vh] xs8:h-[330vh] h-[350vh] w-full">
+                    <div class="2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto">
+                        <div class=" sm:pt-32 pt-20">
+                            <!-- Header -->
+                            <h1 class="text-4xl font-semibold sm:mb-[3.7em] mb-24">
+                                <span class="text-gray-800  font-jura text-[#2F2F2F]">Why Choosing</span>
+                                <span class="text-primary  font-jura text-[#7E57C2]">US</span>
+                            </h1>
+
+                            <!-- Timeline Layout with Circle -->
+                            <div class="">
+                                <ul class="timeline">
+                                    <li>
+                                        <div class="timeline-content left">
+                                            <div class="text-[#7e57c2] text-left font-jura text-5xl font-bold relative self-stretch pb-11">
+                                                01
+                                            </div>
+                                            <div class="text-left text-4xl font-bold pb-9">
+                                                <span>
+                                                    <span class="text-[#2F2F2F] font-jura">Lorem</span>
+                                                    <span class="text-[#B085F5] font-jura">ispum</span>
+                                                </span>
+                                            </div>
+                                            <div class="text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal ps-2">
+                                                Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                ullamcorper semper
+                                            </div>
+                                        </div>
+                                        <div class="timeline-dot"></div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <div class="text-[#7e57c2] text-left font-jura text-5xl font-bold pb-11">
+                                                02
+                                            </div>
+                                            <div class="text-left text-4xl font-bold pb-9">
+                                                <span>
+                                                    <span class="text-[#2F2F2F] font-jura">Lorem</span>
+                                                    <span class="text-[#B085F5] font-jura">ispum</span>
+                                                </span>
+                                            </div>
+                                            <div class="text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal ps-2">
+                                                Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                ullamcorper semper
+                                            </div>
+
+                                        </div>
+                                        <div class="timeline-dot"></div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <div class="text-[#7e57c2] text-left font-jura text-5xl font-bold relative self-stretch pb-11">
+                                                03
+                                            </div>
+                                            <div class="text-left text-4xl font-bold pb-9">
+                                                <span>
+                                                    <span class="text-[#2F2F2F] font-jura">Lorem</span>
+                                                    <span class="text-[#B085F5] font-jura">ispum</span>
+                                                </span>
+                                            </div>
+                                            <div class="text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal ps-2">
+                                                Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                ullamcorper semper
+                                            </div>
+                                        </div>
+                                        <div class="timeline-dot"></div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <div class="text-[#7e57c2] text-left font-jura text-5xl font-bold relative self-stretch pb-11">
+                                                04
+                                            </div>
+                                            <div class="text-left text-4xl font-bold pb-9">
+                                                <span>
+                                                    <span class="text-[#2F2F2F] font-jura">Lorem</span>
+                                                    <span class="text-[#B085F5] font-jura">ispum</span>
+                                                </span>
+                                            </div>
+                                            <div class="text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal ps-2">
+                                                Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                ullamcorper semper
+                                            </div>
+                                        </div>
+                                        <div class="timeline-dot"></div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--timeline area end-->
+        
+        <div class="card-area ">
+            <div class="2xl:max-w-5xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto relative">
+                <div class="bg-[#ffffff] rounded-[30px] py-11 lg:px-28 sm:px-11 px-5 overflow-hidden border-2 border-solid border-[#7e57c2] w-full flex 4md:flex-row flex-col 4md:gap-0 gap-11 absolute left-0 4md:-top-36 sm:-top-60 -top-52" style=" box-shadow: 0px 6px 30px 0px rgba(47, 47, 47, 0.15);">
+                    <img src="../assets/images/card-left-background.png" alt="card background image left" class=" absolute -top-[255px] -left-[215px]">
+                    <img src="../assets/images/card-background2.png" alt="card background" class=" absolute -bottom-[175px] -right-[215px]">
+                    <div class="w-full flex flex-col 4md:gap-[75px] gap-9 items-start justify-start relative">
+                        <div class="sm:p-2.5  4md:text-left text-center 4md:mx-0 mx-auto text-[64px] leading-10 font-bold">
+                            <span class="font-jura text-[#2F2F2F]">5 years</span>
+                            <span class="font-jura text-[#B085F5]">+</span>
+                        </div>
+                        <div class="sm:p-2.5 text-[#b2b2b2] 4md:text-left text-center 4md:mx-0 mx-auto font-Jaldi text-2xl leading-10 font-normal">
+                            In UI/UX For Lorem Ipsum
+                        </div>
+                        <div class="4md:block hidden absolute top-[50%] right-0 -translate-y-2/4 w-[1.5px] h-[158px] bg-[#B2B2B2]"></div>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex flex-col 4md:gap-[75px] gap-9 items-center justify-center relative">
+                            <div class="sm:p-2.5  4md:text-left text-center 4md:mx-0 mx-auto text-left text-[64px] leading-10 font-bold ">
+                                <span class="text-[#2F2F2F] font-jura">100</span>
+                                <span class="text-[#B085F5] font-jura">+</span>
+                            </div>
+                            <div class="sm:p-2.5  4md:text-left text-center 4md:mx-0 mx-auto text-[#b2b2b2] text-left font-Jaldi text-2xl leading-10 font-normal">
+                                Done Projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cart area end-->
+         
+        <div class="meet-our-team-area relative">
+            <img src="../assets/images/meet-our-team-background1.png" alt="meet our team area" class="w-full absolute top-0 left-0 right-0 -z-20">
+            <div class="bg-[#ffffff] rounded-[10%] h-full w-full absolute top-[50%] left-0 right-0 -translate-y-2/4 -z-10" style="filter: blur(96.05px)"></div>
+            <img src="../assets/images/meet-our-team-background2.png" alt="meet our team area" class="w-full absolute bottom-0 left-0 right-0 -z-20">
+
+            <div class="2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto">
+                <div class="text-left text-5xl font-bold pt-72 pb-11">
+                    <span class="text-[#2F2F2F] font-jura">Meet</span>
+                    <span class="text-[#7E57C2] font-jura">Our Team</span>
+                </div>
+
+
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-[.5rem]">
+                            <div class="card w-full">
+                                <div class="card__side card__side--front relative w-full">
+                                    <img src="../assets/images/team-member1.png" alt="team member 1">
+                                    <div class="w-full h-full absolute top-0 left-0 right-0">
+                                        <div class="rounded-[20px] w-full h-full flex flex-col justify-end py-10 px-9" style="background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(204, 204, 204, 0.2) 29.51311767101288%,rgba(166, 166, 166, 0.4) 60.7496976852417%,rgba(47, 47, 47, 1) 100%);">
+                                            <div class="pb-1.5 text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold">
+                                                Nahid Islam
+                                            </div>
+                                            <div class="text-[#dcdcdc] text-left font-['Jaldi-Regular',_sans-serif] text-xs font-normal">
+                                                Founder of Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class=" relative">
+                                        <img src="../assets/images/card-back-side-mage.png" class="w-full h-full rounded-[20px]" alt="team member 1">
+                                        <div class="text-white text-left absolute top-0 left-0 right-0 p-7 flex flex-col justify-between h-full">
+                                            <div>
+                                                <div class="pb-2.5 text-[#ffffff] text-left font-jura text-xl font-bold">
+                                                    Mehedi Hasan
+                                                </div>
+                                                <div class=" text-[#dcdcdc] text-left font-Jaldi text-xs font-normal">
+                                                    Founder of Lorem Ipsum
+                                                </div>
+                                            </div>
+                                            <div class="py-2.5 text-[#ffffff] text-left font-Jaldi text-sm leading-[30px] font-normal">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-[.5rem]">
+                            <div class="card w-full">
+                                <div class="card__side card__side--front relative w-full">
+                                    <img src="../assets/images/team-member1.png" alt="team member 1">
+                                    <div class="w-full h-full absolute top-0 left-0 right-0">
+                                        <div class="rounded-[20px] w-full h-full flex flex-col justify-end py-10 px-9" style="background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(204, 204, 204, 0.2) 29.51311767101288%,rgba(166, 166, 166, 0.4) 60.7496976852417%,rgba(47, 47, 47, 1) 100%);">
+                                            <div class="pb-1.5 text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold">
+                                                Nahid Islam
+                                            </div>
+                                            <div class="text-[#dcdcdc] text-left font-['Jaldi-Regular',_sans-serif] text-xs font-normal">
+                                                Founder of Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class=" relative">
+                                        <img src="../assets/images/card-back-side-mage.png" class="w-full h-full rounded-[20px]" alt="team member 1">
+                                        <div class="text-white text-left absolute top-0 left-0 right-0 p-7 flex flex-col justify-between h-full">
+                                            <div>
+                                                <div class="pb-2.5 text-[#ffffff] text-left font-jura text-xl font-bold">
+                                                    Mehedi Hasan
+                                                </div>
+                                                <div class=" text-[#dcdcdc] text-left font-Jaldi text-xs font-normal">
+                                                    Founder of Lorem Ipsum
+                                                </div>
+                                            </div>
+                                            <div class="py-2.5 text-[#ffffff] text-left font-Jaldi text-sm leading-[30px] font-normal">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-[.5rem]">
+                            <div class="card w-full">
+                                <div class="card__side card__side--front relative w-full">
+                                    <img src="../assets/images/team-member1.png" alt="team member 1">
+                                    <div class="w-full h-full absolute top-0 left-0 right-0">
+                                        <div class="rounded-[20px] w-full h-full flex flex-col justify-end py-10 px-9" style="background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(204, 204, 204, 0.2) 29.51311767101288%,rgba(166, 166, 166, 0.4) 60.7496976852417%,rgba(47, 47, 47, 1) 100%);">
+                                            <div class="pb-1.5 text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold">
+                                                Nahid Islam
+                                            </div>
+                                            <div class="text-[#dcdcdc] text-left font-['Jaldi-Regular',_sans-serif] text-xs font-normal">
+                                                Founder of Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class=" relative">
+                                        <img src="../assets/images/card-back-side-mage.png" class="w-full h-full rounded-[20px]" alt="team member 1">
+                                        <div class="text-white text-left absolute top-0 left-0 right-0 p-7 flex flex-col justify-between h-full">
+                                            <div>
+                                                <div class="pb-2.5 text-[#ffffff] text-left font-jura text-xl font-bold">
+                                                    Mehedi Hasan
+                                                </div>
+                                                <div class=" text-[#dcdcdc] text-left font-Jaldi text-xs font-normal">
+                                                    Founder of Lorem Ipsum
+                                                </div>
+                                            </div>
+                                            <div class="py-2.5 text-[#ffffff] text-left font-Jaldi text-sm leading-[30px] font-normal">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-[.5rem]">
+                            <div class="card w-full">
+                                <div class="card__side card__side--front relative w-full">
+                                    <img src="../assets/images/team-member1.png" alt="team member 1">
+                                    <div class="w-full h-full absolute top-0 left-0 right-0">
+                                        <div class="rounded-[20px] w-full h-full flex flex-col justify-end py-10 px-9" style="background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(204, 204, 204, 0.2) 29.51311767101288%,rgba(166, 166, 166, 0.4) 60.7496976852417%,rgba(47, 47, 47, 1) 100%);">
+                                            <div class="pb-1.5 text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold">
+                                                Nahid Islam
+                                            </div>
+                                            <div class="text-[#dcdcdc] text-left font-['Jaldi-Regular',_sans-serif] text-xs font-normal">
+                                                Founder of Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__side card__side--back">
+                                    <div class=" relative">
+                                        <img src="../assets/images/card-back-side-mage.png" class="w-full h-full rounded-[20px]" alt="team member 1">
+                                        <div class="text-white text-left absolute top-0 left-0 right-0 p-7 flex flex-col justify-between h-full">
+                                            <div>
+                                                <div class="pb-2.5 text-[#ffffff] text-left font-jura text-xl font-bold">
+                                                    Mehedi Hasan
+                                                </div>
+                                                <div class=" text-[#dcdcdc] text-left font-Jaldi text-xs font-normal">
+                                                    Founder of Lorem Ipsum
+                                                </div>
+                                            </div>
+                                            <div class="py-2.5 text-[#ffffff] text-left font-Jaldi text-sm leading-[30px] font-normal">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hidden"></div>
+                </div>
+
+
+
+                 <!-- our used tools -->
+                <div class="our-used-tools sm:px-14 py-32">
+                    <div class="bg-[#ffffff] xs:px-16 px-5 md:py-0 py-16 flex md:flex-row flex-col items-center justify-between md:gap-0 gap-9 overflow-hidden rounded-[30px] border-2 border-solid border-[#b085f5] md:h-60 relative" style="box-shadow: 0px 6px 30px 0px rgba(47, 47, 47, 0.15);">
+                        <!-- our used tools card background start -->
+                        <div class=" absolute -top-44 -left-48 -z-0">
+                            <div class="h-[401px] w-[401px] relative">
+                                <div class="rounded-[50%] w-full h-full absolute left-0 top-0 border-2 border-[#d6d6d6]" ></div>
+                                <div class="rounded-[50%] w-[87.5%] h-[87.5%] absolute left-[50%] top-[50%] -translate-x-2/4 -translate-y-2/4  border-2 border-[#d6d6d6]" ></div>
+                                <div class="rounded-[50%] w-[75.5%] h-[75.5%] absolute left-[50%] top-[50%] -translate-x-2/4 -translate-y-2/4  border-2 border-[#d6d6d6]"></div>
+                            </div>
+                        </div>
+                        <div class="rounded-[91.5px] w-[108px] h-[113px] absolute top-10 left-11" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));filter: blur(60.6px);"></div>
+
+                        <img src="../assets/images/our-used-tools-background2.png" alt="our used tools background 2" class="h-[375px] w-[375px] absolute -bottom-40 -right-48 -z-0">
+                        <!-- our used tools card background end -->
+
+                        <div class="md:text-left text-center text-5xl font-bold z-10">
+                            <span>
+                                <span class=" font-jura text-[#2F2F2F]">Our</span>
+                                <span class=" font-jura text-[#7E57C2]">Used</span>
+                            </span>
+                            <span>
+                                <span class=" font-jura text-[#2F2F2F]">Tools</span>
+                                <span class=" font-jura text-[#7E57C2] md:block hidden">:</span>
+                            </span>
+                        </div>
+
+                        <div class="flex lg:flex-row flex-col items-center gap-7">
+                            <div class="flex flex-row  gap-7">
+                                <img src="../assets/images/figma.png" alt="pr" class="w-[62px] h-[62px] ">
+                                <img src="../assets/images/ai.png" alt="pr" class="w-[62px] h-[62px] ">
+                            </div>
+                            <div class="flex flex-row  gap-7">
+                                <img src="../assets/images/ps.png" alt="pr" class="w-[62px] h-[62px] ">
+                                <img src="../assets/images/pr.png" alt="pr" class="w-[62px] h-[62px] ">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--meet our team area end-->
+
+
+        <div class="our-happy-client-feedback-area">
+            <div class="bg-[#f4f4f4] relative">
+                <!-- our happy client feedback background work start -->
+                <img src="../assets/images/our-happy-client.png" alt="our happy cliet feedback background 1" class="w-full h-auto absolute top-0 left-0 right-0  z-10">
+                <div class="bg-[#f4f4f4] rounded-[30%] h-full w-full absolute left-0 right-0 top-[50%] -translate-y-2/4 z-20" style="filter: blur(96.05px)"></div>
+                <img src="../assets/images/our-happy-client2.png" alt="our happy cliet feedback background 1" class="w-full h-auto absolute bottom-0 left-0 right-0 z-10">
+                <!-- our happy client feedback background work end -->
+                <div class="our-happy-client-feedback 2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto z-30 relative">
+                    <div class="flex 4md:flex-row flex-col justify-between items-center">
+                        <div class="flex flex-col gap-[3px] items-start justify-start 4md:pb-14 md:pb-7 pb-14 pt-20">
+                            <div class="4md:p-2.5 text-left  text-5xl font-bold pt-20 pb-5 4md:w-[489px] w-full">
+                                <span>
+                                    <span class="text-[#2F2F2F] font-jura">Our Happy</span>
+                                    <span class="text-[#7E57C2] font-jura">Clients Feedback</span>
+                                </span>
+                            </div>
+                            <div class="4md:p-2.5 text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal 6xs:w-[511px] w-full">
+                                Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                tristique porta mi.
+                            </div>
+                        </div>
+
+                        <div class="4md:ms-0 ms-auto  4md:pb-0 pb-28">
+                          <div class="our-happy-client-swiper-next-or-preview-btn">    
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div class="pb-40 2/3xl:w-[93%] w-full 2/3xl:ms-auto">
+                        <div class="swiper our-happy-client-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="clip-shape xs:!h-[80vh] relative">
+                                        <!-- card background start -->
+                                        <img src="../assets/images/our-happy-client-background1.png" alt="our happy client background 1" class="!h-[539px] !w-[539px] absolute -top-72 -left-16">
+                                        <img src="../assets/images/our-happy-client-background2.png" alt="our happy client background 2" class="!h-[317px] !w-[317px] absolute -bottom-40 -right-[7.5em]">
+                                        <!-- card background end -->
+                                        <div class="flex 5xs:flex-row flex-col 5xs:items-start items-center gap-5 ">
+                                            <img class="rounded-[50%] !w-[100px] !h-[100px]" src="../assets/images/client1.png" />
+                                            <div class="pt-5">
+                                                <div class="text-[#2f2f2f] 5xs:text-left text-center font-jura text-2xl leading-[34px] font-bold pb-1">
+                                                    Mehedi 539px
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-base leading-[34px] font-normal pb-3">
+                                                    CEO Of Lorem Ipsum
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-xl leading-[34px] font-normal pb-5">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                                                </div>
+                                                <div class="flex flex-row 5xs:justify-start justify-center gap-1">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clip-shape xs:!h-[80vh] relative">
+                                        <!-- card background start -->
+                                        <img src="../assets/images/our-happy-client-background1.png" alt="our happy client background 1" class="!h-[539px] !w-[539px] absolute -top-72 -left-16">
+                                        <img src="../assets/images/our-happy-client-background2.png" alt="our happy client background 2" class="!h-[317px] !w-[317px] absolute -bottom-40 -right-[7.5em]">
+                                        <!-- card background end -->
+                                        <div class="flex 5xs:flex-row flex-col 5xs:items-start items-center gap-5 ">
+                                            <img class="rounded-[50%] !w-[100px] !h-[100px]" src="../assets/images/client1.png" />
+                                            <div class="pt-5">
+                                                <div class="text-[#2f2f2f] 5xs:text-left text-center font-jura text-2xl leading-[34px] font-bold pb-1">
+                                                    Mehedi 539px
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-base leading-[34px] font-normal pb-3">
+                                                    CEO Of Lorem Ipsum
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-xl leading-[34px] font-normal pb-5">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                                                </div>
+                                                <div class="flex flex-row 5xs:justify-start justify-center gap-1">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clip-shape xs:!h-[80vh] relative">
+                                        <!-- card background start -->
+                                        <img src="../assets/images/our-happy-client-background1.png" alt="our happy client background 1" class="!h-[539px] !w-[539px] absolute -top-72 -left-16">
+                                        <img src="../assets/images/our-happy-client-background2.png" alt="our happy client background 2" class="!h-[317px] !w-[317px] absolute -bottom-40 -right-[7.5em]">
+                                        <!-- card background end -->
+                                        <div class="flex 5xs:flex-row flex-col 5xs:items-start items-center gap-5 ">
+                                            <img class="rounded-[50%] !w-[100px] !h-[100px]" src="../assets/images/client1.png" />
+                                            <div class="pt-5">
+                                                <div class="text-[#2f2f2f] 5xs:text-left text-center font-jura text-2xl leading-[34px] font-bold pb-1">
+                                                    Mehedi 539px
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-base leading-[34px] font-normal pb-3">
+                                                    CEO Of Lorem Ipsum
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-xl leading-[34px] font-normal pb-5">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                                                </div>
+                                                <div class="flex flex-row 5xs:justify-start justify-center gap-1">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clip-shape xs:!h-[80vh] relative">
+                                        <!-- card background start -->
+                                        <img src="../assets/images/our-happy-client-background1.png" alt="our happy client background 1" class="!h-[539px] !w-[539px] absolute -top-72 -left-16">
+                                        <img src="../assets/images/our-happy-client-background2.png" alt="our happy client background 2" class="!h-[317px] !w-[317px] absolute -bottom-40 -right-[7.5em]">
+                                        <!-- card background end -->
+                                        <div class="flex 5xs:flex-row flex-col 5xs:items-start items-center gap-5 ">
+                                            <img class="rounded-[50%] !w-[100px] !h-[100px]" src="../assets/images/client1.png" />
+                                            <div class="pt-5">
+                                                <div class="text-[#2f2f2f] 5xs:text-left text-center font-jura text-2xl leading-[34px] font-bold pb-1">
+                                                    Mehedi 539px
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-base leading-[34px] font-normal pb-3">
+                                                    CEO Of Lorem Ipsum
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-xl leading-[34px] font-normal pb-5">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                                                </div>
+                                                <div class="flex flex-row 5xs:justify-start justify-center gap-1">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clip-shape xs:!h-[80vh] relative">
+                                        <!-- card background start -->
+                                        <img src="../assets/images/our-happy-client-background1.png" alt="our happy client background 1" class="!h-[539px] !w-[539px] absolute -top-72 -left-16">
+                                        <img src="../assets/images/our-happy-client-background2.png" alt="our happy client background 2" class="!h-[317px] !w-[317px] absolute -bottom-40 -right-[7.5em]">
+                                        <!-- card background end -->
+                                        <div class="flex 5xs:flex-row flex-col 5xs:items-start items-center gap-5 ">
+                                            <img class="rounded-[50%] !w-[100px] !h-[100px]" src="../assets/images/client1.png" />
+                                            <div class="pt-5">
+                                                <div class="text-[#2f2f2f] 5xs:text-left text-center font-jura text-2xl leading-[34px] font-bold pb-1">
+                                                    Mehedi 539px
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-base leading-[34px] font-normal pb-3">
+                                                    CEO Of Lorem Ipsum
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-xl leading-[34px] font-normal pb-5">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                                                </div>
+                                                <div class="flex flex-row 5xs:justify-start justify-center gap-1">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clip-shape xs:!h-[80vh] relative">
+                                        <!-- card background start -->
+                                        <img src="../assets/images/our-happy-client-background1.png" alt="our happy client background 1" class="!h-[539px] !w-[539px] absolute -top-72 -left-16">
+                                        <img src="../assets/images/our-happy-client-background2.png" alt="our happy client background 2" class="!h-[317px] !w-[317px] absolute -bottom-40 -right-[7.5em]">
+                                        <!-- card background end -->
+                                        <div class="flex 5xs:flex-row flex-col 5xs:items-start items-center gap-5 ">
+                                            <img class="rounded-[50%] !w-[100px] !h-[100px]" src="../assets/images/client1.png" />
+                                            <div class="pt-5">
+                                                <div class="text-[#2f2f2f] 5xs:text-left text-center font-jura text-2xl leading-[34px] font-bold pb-1">
+                                                    Mehedi 539px
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-base leading-[34px] font-normal pb-3">
+                                                    CEO Of Lorem Ipsum
+                                                </div>
+                                                <div class="text-[#515151] 5xs:text-left text-center font-Jaldi text-xl leading-[34px] font-normal pb-5">
+                                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                                    tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                                    ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                                                </div>
+                                                <div class="flex flex-row 5xs:justify-start justify-center gap-1">
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2867 1.00431C10.5112 0.313323 11.4888 0.313323 11.7133 1.0043L13.4564 6.36905C13.6237 6.88408 14.1037 7.23278 14.6452 7.23278H20.2861C21.0126 7.23278 21.3147 8.16249 20.7269 8.58954L16.1634 11.9051C15.7253 12.2234 15.5419 12.7877 15.7093 13.3027L17.4524 18.6674C17.6769 19.3584 16.886 19.933 16.2983 19.5059L11.7347 16.1904C11.2966 15.8721 10.7034 15.8721 10.2653 16.1904L5.70174 19.5059C5.11396 19.933 4.3231 19.3584 4.54761 18.6674L6.29072 13.3027C6.45807 12.7877 6.27474 12.2234 5.83663 11.9051L1.27311 8.58954C0.685325 8.16249 0.987407 7.23278 1.71395 7.23278H7.35477C7.89631 7.23278 8.37625 6.88408 8.5436 6.36905L10.2867 1.00431Z" fill="#E8E831" stroke="#717171" stroke-width="0.5"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="our-happy-client w-[90%]">
+                          <div class=" our-happy-client-swiper-pagination pb-20">
+                              <div class="swiper-pagination"></div>
+                          </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our happy client feedback area end -->
+
+        <div class="get-ready-to-work-with-us-area relative">
+            <!-- get ready to work with us area start -->
+            <img src="../assets/images/get-ready-background.png" alt="get ready to work with us background" class="w-full h-full absolute top-0 left-0 -z-20">
+            <div class="bg-[rgba(255,255,255)] rounded-[5%] h-[1122px] w-full absolute top-0 left-0 -z-10" style="filter: blur(96.05px)"></div>
+            <div class="bg-[rgba(255,255,255)] rounded-[5%] h-[1122px] w-full absolute -bottom-32 left-0 -z-10" style="filter: blur(96.05px)"></div>
+
+            <!-- get ready to work with us area end -->
+            <div class="get-ready-to-work-with-us 2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto pt-24">
+                <div class="flex lg:flex-row flex-col gap-[100px] lg:items-center justify-start relative">
+                    <div class="flex flex-col gap-[52px] items-start justify-start shrink-0">
+                        <div class="flex flex-col gap-[26px] items-start justify-start self-stretch shrink-0 relative">
+                            <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 text-left text-5xl font-bold">
+                                <span>
+                                    <span class="text-[#000000]  font-jura">
+                                        Latest
+                                        <br />
+                                    </span>
+                                    <span class="text-[#7E57C2]  font-jura">News</span>
+                                </span>
+                            </div>
+                            <div class="p-2.5 text-[#515151] text-left font-Jaldi text-xl leading-8 font-normal relative lg:w-[511px]">
+                                Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium
+                                risus tristique porta mi. Malesuada dui facilisis aenean elit sapien.
+                                Vitae ullamcorper
+                            </div>
+                        </div>
+                        <div class="p-2.5 flex flex-row items-center justify-between self-stretch shrink-0 w-[241px]">
+                            <div class="p-2.5 text-[#7e57c2] text-left font-['Jura-Bold',_sans-serif] text-xl font-bold">
+                                See All News
+                            </div>
+                            <span>
+                                <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1.5C0 1.10156 0.158204 0.720703 0.439454 0.439453C1.02539 -0.146484 1.97461 -0.146484 2.56055 0.439453L11.5605 9.43945C11.8418 9.7207 12 10.1016 12 10.5C12 10.8984 11.8418 11.2793 11.5605 11.5605L2.56055 20.5605C1.97461 21.1465 1.02539 21.1465 0.439454 20.5605C0.158204 20.2793 0 19.8984 0 19.5C0 19.1016 0.158204 18.7207 0.439454 18.4395L8.37891 10.5L0.439454 2.56055C0.158204 2.2793 0 1.89844 0 1.5Z" fill="#7E57C2" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class=" w-full space-y-7">
+                        <div class="group bg-[#f9f9f9] rounded-[20px] border-solid hover:border-[#b2b2b2] border border-transparent  hover:shadow-custom w-full h-auto px-7 py-4 flex flex-row items-center gap-5 transition-all">
+                            <div>
+                                <div class="flex xs3:flex-row flex-col gap-0 items-center justify-start">
+                                    <div class="p-2.5 bg-[#2F2F2F] group-hover:bg-button-gradient text-left font-jura text-xl leading-7 font-bold transition-all ease-linear duration-200" style="background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                                        Creator
+                                    </div>
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-start shrink-0">
+                                        <div class="bg-[rgba(178,178,178,0.50)] rounded-[50%] shrink-0 w-1.5 h-1.5"></div>
+                                    </div>
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 text-[#b2b2b2] text-left font-jura text-base leading-7 font-bold">
+                                        24 June,2024
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 text-[#515151] xs3:text-left text-center font-Jaldi text-base leading-7 font-normal w-auto">
+                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium
+                                    risus tristique porta mi. Malesuada dui facilisis aenean elit
+                                    sapien. Vitae ullamcorper semper egestas a dui dolor massa fames.
+                                    Gravida sodales tellus
+                                </div>
+                            </div>
+                            <span class="hidden xs3:group-hover:block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9791 4C11.4268 4 10.9791 3.55228 10.9791 3C10.9791 2.44772 11.4268 2 11.9791 2H19.9791C21.0837 2 21.9791 2.89543 21.9791 4V12C21.9791 12.5523 21.5314 13 20.9791 13C20.4268 13 19.9791 12.5523 19.9791 12V5.39343L3.70711 21.6655C3.31659 22.056 2.68342 22.056 2.2929 21.6655C1.90237 21.2749 1.90237 20.6418 2.2929 20.2512L18.5441 4H11.9791Z" fill="url(#paint0_linear_24_698)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_24_698" x1="25.9451" y1="-8.09397" x2="-12.6565" y2="-0.821194" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.231141" stop-color="#B085F5" />
+                                            <stop offset="0.479508" stop-color="#7E57C2" />
+                                            <stop offset="1" stop-color="#00557F" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class=" xs3:block xs3:group-hover:hidden hidden">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9791 4C11.4268 4 10.9791 3.55228 10.9791 3C10.9791 2.44772 11.4268 2 11.9791 2H19.9791C21.0837 2 21.9791 2.89543 21.9791 4V12C21.9791 12.5523 21.5314 13 20.9791 13C20.4268 13 19.9791 12.5523 19.9791 12V5.39343L3.70711 21.6655C3.31659 22.056 2.68342 22.056 2.2929 21.6655C1.90237 21.2749 1.90237 20.6418 2.2929 20.2512L18.5441 4H11.9791Z" fill="#B2B2B2" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="group bg-[#f9f9f9] rounded-[20px] border-solid hover:border-[#b2b2b2] border border-transparent  hover:shadow-custom w-full h-auto px-7 py-4 flex flex-row items-center gap-5 transition-all">
+                            <div>
+                                <div class="flex xs3:flex-row flex-col gap-0 items-center justify-start">
+                                    <div class="p-2.5 bg-[#2F2F2F] group-hover:bg-button-gradient text-left font-jura text-xl leading-7 font-bold transition-all ease-linear duration-200" style="background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                                        Creator
+                                    </div>
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-start shrink-0">
+                                        <div class="bg-[rgba(178,178,178,0.50)] rounded-[50%] shrink-0 w-1.5 h-1.5"></div>
+                                    </div>
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 text-[#b2b2b2] text-left font-jura text-base leading-7 font-bold">
+                                        24 June,2024
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 text-[#515151] xs3:text-left text-center font-Jaldi text-base leading-7 font-normal w-auto">
+                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium
+                                    risus tristique porta mi. Malesuada dui facilisis aenean elit
+                                    sapien. Vitae ullamcorper semper egestas a dui dolor massa fames.
+                                    Gravida sodales tellus
+                                </div>
+                            </div>
+                            <span class="hidden xs3:group-hover:block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9791 4C11.4268 4 10.9791 3.55228 10.9791 3C10.9791 2.44772 11.4268 2 11.9791 2H19.9791C21.0837 2 21.9791 2.89543 21.9791 4V12C21.9791 12.5523 21.5314 13 20.9791 13C20.4268 13 19.9791 12.5523 19.9791 12V5.39343L3.70711 21.6655C3.31659 22.056 2.68342 22.056 2.2929 21.6655C1.90237 21.2749 1.90237 20.6418 2.2929 20.2512L18.5441 4H11.9791Z" fill="url(#paint0_linear_24_698)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_24_698" x1="25.9451" y1="-8.09397" x2="-12.6565" y2="-0.821194" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.231141" stop-color="#B085F5" />
+                                            <stop offset="0.479508" stop-color="#7E57C2" />
+                                            <stop offset="1" stop-color="#00557F" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class=" xs3:block xs3:group-hover:hidden hidden">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9791 4C11.4268 4 10.9791 3.55228 10.9791 3C10.9791 2.44772 11.4268 2 11.9791 2H19.9791C21.0837 2 21.9791 2.89543 21.9791 4V12C21.9791 12.5523 21.5314 13 20.9791 13C20.4268 13 19.9791 12.5523 19.9791 12V5.39343L3.70711 21.6655C3.31659 22.056 2.68342 22.056 2.2929 21.6655C1.90237 21.2749 1.90237 20.6418 2.2929 20.2512L18.5441 4H11.9791Z" fill="#B2B2B2" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="group bg-[#f9f9f9] rounded-[20px] border-solid hover:border-[#b2b2b2] border border-transparent  hover:shadow-custom w-full h-auto px-7 py-4 flex flex-row items-center gap-5 transition-all">
+                            <div>
+                                <div class="flex xs3:flex-row flex-col gap-0 items-center justify-start">
+                                    <div class="p-2.5 bg-[#2F2F2F] group-hover:bg-button-gradient text-left font-jura text-xl leading-7 font-bold transition-all ease-linear duration-200" style="background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                                        Creator
+                                    </div>
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-start shrink-0">
+                                        <div class="bg-[rgba(178,178,178,0.50)] rounded-[50%] shrink-0 w-1.5 h-1.5"></div>
+                                    </div>
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 text-[#b2b2b2] text-left font-jura text-base leading-7 font-bold">
+                                        24 June,2024
+                                    </div>
+                                </div>
+
+                                <div class="p-2.5 text-[#515151] xs3:text-left text-center font-Jaldi text-base leading-7 font-normal w-auto">
+                                    Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium
+                                    risus tristique porta mi. Malesuada dui facilisis aenean elit
+                                    sapien. Vitae ullamcorper semper egestas a dui dolor massa fames.
+                                    Gravida sodales tellus
+                                </div>
+                            </div>
+                            <span class="hidden xs3:group-hover:block">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9791 4C11.4268 4 10.9791 3.55228 10.9791 3C10.9791 2.44772 11.4268 2 11.9791 2H19.9791C21.0837 2 21.9791 2.89543 21.9791 4V12C21.9791 12.5523 21.5314 13 20.9791 13C20.4268 13 19.9791 12.5523 19.9791 12V5.39343L3.70711 21.6655C3.31659 22.056 2.68342 22.056 2.2929 21.6655C1.90237 21.2749 1.90237 20.6418 2.2929 20.2512L18.5441 4H11.9791Z" fill="url(#paint0_linear_24_698)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_24_698" x1="25.9451" y1="-8.09397" x2="-12.6565" y2="-0.821194" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.231141" stop-color="#B085F5" />
+                                            <stop offset="0.479508" stop-color="#7E57C2" />
+                                            <stop offset="1" stop-color="#00557F" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class=" xs3:block xs3:group-hover:hidden hidden">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9791 4C11.4268 4 10.9791 3.55228 10.9791 3C10.9791 2.44772 11.4268 2 11.9791 2H19.9791C21.0837 2 21.9791 2.89543 21.9791 4V12C21.9791 12.5523 21.5314 13 20.9791 13C20.4268 13 19.9791 12.5523 19.9791 12V5.39343L3.70711 21.6655C3.31659 22.056 2.68342 22.056 2.2929 21.6655C1.90237 21.2749 1.90237 20.6418 2.2929 20.2512L18.5441 4H11.9791Z" fill="#B2B2B2" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-28 flex 3lg:flex-row flex-col 3lg:items-end 3lg:gap-0 gap-11">
+                    <div class="w-full">
+                        <span class="text-left font-jura text-xl font-bold w-auto" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                            Let’s Work Together
+                        </span>
+                        <div class="text-left text-5xl font-bold pt-5 pb-3">
+                            <span>
+                                <span class=" font-jura text-[#2F2F2F]">Lorem</span>
+                                <span class=" font-jura text-[#7E57C2]">Ipsum Dolor</span>
+                            </span>
+                        </div>
+                        <div class="text-[#515151] text-left font-Jaldi text-xl leading-[34px] font-normal">
+                            Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                            tristique porta mi.
+                        </div>
+                    </div>
+
+                    <div class="h-auto w-full flex 3lg:justify-end justify-start">
+                        <div class="space-y-3">
+                            <div class="flex flex-wrap gap-3">
+                                <div class="bg-[#f9f9f9] rounded-[10px] xs6:w-[226px] w-full pb-1 px-2 xs6:!pt-1 !pt-3 flex xs6:flex-row flex-col gap-3 items-center">
+                                    <div class="bg-[rgba(126,87,194,0.60)] h-[31px] w-[31px] rounded-md flex justify-center items-center">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.5844 1.46148C17.5844 1.46148 16.8202 1.20013 16.1939 1.04077C14.4734 0.602649 10.8571 0.369141 9.00002 0.369141C7.14293 0.369141 3.52668 0.602649 1.80614 1.04077C1.17979 1.20016 0.41567 1.46148 0.41567 1.46148C0.150522 1.54164 -0.0218141 1.79631 0.00223275 2.07229L0.301307 5.5118C0.32792 5.814 0.581045 6.04621 0.884233 6.04621H3.86503C4.16407 6.04621 4.41498 5.82064 4.44697 5.52315L4.59744 4.11785C4.62721 3.83906 4.85056 3.62081 5.12998 3.59701C5.12998 3.59701 7.53762 3.37968 9.00002 3.37968C10.462 3.37968 12.87 3.59701 12.87 3.59701C13.1495 3.62078 13.3728 3.83906 13.4026 4.11785L13.5534 5.52315C13.585 5.82064 13.836 6.04621 14.135 6.04621H17.1155C17.419 6.04621 17.6721 5.814 17.6987 5.5118L17.9978 2.07229C18.0219 1.79631 17.8496 1.54164 17.5844 1.46148Z" fill="white" />
+                                            <path d="M12.5685 4.30322H10.6221V5.92523H7.37802V4.30322H5.43159C5.43159 4.30322 5.10717 8.52046 1.21436 11.6023C1.21436 12.7377 1.21436 16.1708 1.21436 16.1708C1.21436 16.4246 1.42027 16.6306 1.67402 16.6306H16.326C16.5798 16.6306 16.7857 16.4246 16.7857 16.1708C16.7857 16.1708 16.7857 12.7377 16.7857 11.6023C12.8929 8.52046 12.5685 4.30322 12.5685 4.30322ZM11.9098 13.2607V14.5758H10.5951V13.2607H11.9098ZM11.9098 11.1812V12.4963H10.5951V11.1812H11.9098ZM10.5951 10.4165V9.10181H11.9098V10.4165H10.5951ZM9.65738 13.2607V14.5758H8.34267V13.2607H9.65738ZM9.65738 11.1812V12.4963H8.34267V11.1812H9.65738ZM9.65738 9.10181V10.4165H8.34267V9.10181H9.65738ZM7.40495 13.2607V14.5758H6.09021V13.2607H7.40495ZM7.40495 11.1812V12.4963H6.09021V11.1812H7.40495ZM7.40495 9.10181V10.4165H6.09021V9.10181H7.40495Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-[#2f2f2f] text-left font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold w-[146px] h-[38px]">
+                                        +880 1953683518
+                                    </div>
+                                </div>
+                                <div class="bg-[#f9f9f9] rounded-[10px] xs6:w-[265px] w-full pb-1 px-2 xs6:!pt-1 !pt-3 flex xs6:flex-row flex-col gap-3 items-center">
+                                    <div class="bg-[rgba(126,87,194,0.60)] h-[31px] w-[31px] rounded-md flex justify-center items-center">
+                                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.068 0.5H16.643C18.018 0.5 18.711 1.149 18.711 2.469V11.731C18.711 13.04 18.018 13.7 16.643 13.7H2.068C0.693 13.7 0 13.04 0 11.731V2.469C0 1.149 0.693 0.5 2.068 0.5ZM9.35 9.96L16.764 3.877C17.028 3.657 17.237 3.151 16.907 2.7C16.588 2.249 16.005 2.238 15.62 2.513L9.35 6.759L3.091 2.513C2.706 2.238 2.123 2.249 1.804 2.7C1.474 3.151 1.683 3.657 1.947 3.877L9.35 9.96Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-[#2f2f2f] xs6:w-auto w-full xs6:text-left text-center font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold w-[146px] h-[38px]">
+                                        naimul46823@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-[#f9f9f9] rounded-[10px] 6xs:w-[503px] w-full pb-1 px-2 3xs:!pt-1 !pt-3 flex 3xs:flex-row flex-col gap-3 items-center">
+                                <div class="bg-[rgba(126,87,194,0.60)] h-[31px] w-[31px] rounded-md flex justify-center items-center">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_24_759)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20.5C11.7659 20.5 18 12.5733 18 8.27778C18 3.98223 14.4183 0.5 10 0.5C5.58172 0.5 2 3.98223 2 8.27778C2 12.5733 8.2341 20.5 10 20.5ZM10 11.6111C11.8935 11.6111 13.4285 10.1187 13.4285 8.27778C13.4285 6.43683 11.8935 4.94445 10 4.94445C8.10645 4.94445 6.57145 6.43683 6.57145 8.27778C6.57145 10.1187 8.10645 11.6111 10 11.6111Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_24_759">
+                                                <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="text-[#2f2f2f] 3xs:text-left text-center font-['Jura-Bold',_sans-serif] text-base leading-10 font-bold">
+                                    Ralegate, Daulotpur, Khulna9000, Bangladesh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex 4md:flex-row flex-col 4md:items-start items-center justify-between 4md:gap-0 gap-7 pt-44 pb-20">
+                    <div class="rounded-[40px] border-solid border-[#7e57c2] border xs3:w-[290px] w-full h-[77px] flex flex-row items-center justify-between xs5:pe-1">
+                        <div class="rounded-[40px] flex flex-row gap-2.5 items-center justify-center xs5:w-[205px] w-full h-full text-[#ffffff] text-left font-['Jura-Bold',_sans-serif] text-2xl leading-10 font-bold" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                            BOOK NOW
+                        </div>
+                        <div class="rounded-[50%] w-[64.4px] h-[64.4px] xs5:flex hidden justify-center items-center" style="background: linear-gradient(-2.15deg,rgba(173, 87, 194, 0.8) 20.000000298023224%,rgba(118, 70, 169, 0.8) 47.77631759643555%,rgba(20, 17, 104, 0.8) 93.79166960716248%);">
+                            <svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.62495 29.1682C1.43851 29.1693 1.25369 29.1336 1.08109 29.0631C0.908484 28.9926 0.751494 28.8887 0.619121 28.7574C0.486339 28.6257 0.380947 28.469 0.309025 28.2964C0.237103 28.1237 0.200073 27.9386 0.200073 27.7516C0.200073 27.5645 0.237103 27.3794 0.309025 27.2067C0.380947 27.0341 0.486339 26.8774 0.619121 26.7457L12.3775 15.0016L0.619121 3.2574C0.487033 3.12531 0.382255 2.9685 0.31077 2.79592C0.239284 2.62334 0.202491 2.43836 0.202491 2.25156C0.202491 1.8743 0.352357 1.51249 0.619121 1.24573C0.885884 0.978968 1.24769 0.829102 1.62495 0.829102C2.00221 0.829102 2.36402 0.978968 2.63079 1.24573L15.3808 13.9957C15.5136 14.1274 15.619 14.2841 15.6909 14.4567C15.7628 14.6294 15.7998 14.8145 15.7998 15.0016C15.7998 15.1886 15.7628 15.3737 15.6909 15.5464C15.619 15.719 15.5136 15.8757 15.3808 16.0074L2.63079 28.7574C2.49841 28.8887 2.34142 28.9926 2.16882 29.0631C1.99622 29.1336 1.8114 29.1693 1.62495 29.1682Z" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="4md:text-right text-center text-5xl font-bold 6xs:w-[450px] w-full">
+                        <span>
+                            <span class="font-jura text-[#2F2F2F]">Get ready To</span>
+                            <span class="font-jura text-[#7E57C2]">Work With Us</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+<!-- ====== Footer Section Start -->
+<footer class="relative bg-[#f4f4f4] dark:bg-dark pt-20 pb-7 lg:pt-[120px]">
+    <!-- footer background start -->
+    <img src="../assets/images/footer-background1.png" alt="footer background 1" class=" absolute top-0 left-0 h-[430px] w-[430px]">
+    <img src="../assets/images/footer-background2.png" alt="footer background 1" class=" absolute bottom-0 right-0 !h-[262px] !w-[262px]">
+
+    <!-- footer background end -->
+    <div class="2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto">
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
+                <div class="w-full mb-10">
+                    <a href="javascript:void(0)" class="mb-6 inline-block max-w-[160px]">
+                        <div class="text-left font-jura text-[40px] font-bold relative self-stretch" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                            LOGO
+                        </div>
+                    </a>
+                    <div class="text-[#515151] text-left font-['Jaldi-Regular',_sans-serif] text-base leading-[26px] font-normal pb-7">
+                        Lorem ipsum dolor sit amet consectetur. Et vel vel dui pulvinar id in
+                        ullamcorper viverra.
+                    </div>
+
+
+                    <p class="flex flex-wrap gap-5 items-center text-sm font-medium text-dark dark:text-white">
+                        <img src="../assets/images/linkedin.png" alt="linkedin" class="w-6 h-6 rounded-md">
+                        <img src="../assets/images/facebook.png" alt="linkedin" class="w-6 h-6 rounded-md">
+                        <img src="../assets/images/instagram.png" alt="linkedin" class="w-6 h-6 rounded-md">
+                    </p>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl font-bold relative flex-1">
+                            Page
+                        </div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Price
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Blogs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
+
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl font-bold relative flex-1">
+                            Company
+                        </div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                UI/UX Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Lorem Ip
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Lorem Ipsum
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Lorem Ips
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
+
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl font-bold relative flex-1">
+                            Quick Links
+                        </div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                naimul46823@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                Info00@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                +880 1953683518
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="inline-block text-base leading-loose text-[#515151] text-left font-Jaldi text-base font-normal dark:text-dark-6">
+                                +880 0000000000
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+                <div class="w-full mb-10">
+                    <h4 class=" mb-9">
+                        <div class="text-[#2f2f2f] text-left font-jura text-2xl leading-[30px] font-bold relative w-[184px]">
+                            Get The Letest Information
+                        </div>
+                    </h4>
+                    <div class="flex items-center mb-6">
+                        <div class="shrink-0 w-[296px] h-[47px] relative">
+                            <img class="rounded-none w-[296px] h-[47px] absolute left-0 top-0 overflow-visible" src="subtract0.svg" />
+                            <div class="w-[82px] h-[37px] static">
+                                <img class="rounded-none w-[82px] h-[34px] absolute left-[207px] top-[7px] overflow-visible" src="subtract1.svg" />
+                                <div class="flex flex-row gap-1 items-center justify-start absolute left-[215px] top-[5px]">
+                                    <div class="p-2.5 flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+                                        <div class="text-[#ffffff] text-right font-['Jura-Bold',_sans-serif] text-sm font-bold relative">
+                                            Send
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-[#515151] text-left font-['Jaldi-Regular',_sans-serif] text-sm font-normal absolute left-8 top-3">
+                                Email address
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-[#B085F5] sm:mx-auto dark:border-gray-700 lg:my-5" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="text-left text-sm font-normal">
+                <span>
+                    <span class="font-jura text-[#2F2F2F]">
+                        Copyright ©2024 All rights reserved | This Website is made with
+                    </span>
+                    <span class="font-jura text-[#7E57C2]">
+                        by Naimul islam
+                    </span>
+                </span>
+            </div>
+
+            <div class="flex flex-row gap-[25px] items-center justify-start shrink-0">
+                <div class=" text-[#7e57c2] text-right font-jura text-base leading-[22px] font-medium">
+                    Privacy policy
+                </div>
+                <div class="text-[#7e57c2] text-right font-jura text-base leading-[22px] font-medium">
+                    Terms &amp; conditions
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ====== Footer Section End -->
+
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            breakpoints: {
+                1280: {
+                    slidesPerView: 4,
+                },
+                850: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                575: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },        
+            spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true, // Pause on hover
+                waitForTransition: true, // Wait for transition to end before next slide
+                reverseDirection: false, // Reverse direction of autoplay
+                stopOnLastSlide: false // Stop autoplay when it reaches last slide
+            }
+        });
+        var swiper = new Swiper(".our-happy-client-swiper", {
+            breakpoints: {
+                915: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
+            },        
+            spaceBetween: 15,
+            pagination: {
+                el: ".our-happy-client-swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true, // Pause on hover
+                waitForTransition: true, // Wait for transition to end before next slide
+                reverseDirection: false, // Reverse direction of autoplay
+                stopOnLastSlide: false // Stop autoplay when it reaches last slide
+            }
+        });
+    </script>
+</body>
+</html>
