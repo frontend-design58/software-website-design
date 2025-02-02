@@ -53,7 +53,7 @@
 	align-items: center;
 }
 
-.ceo-swiper-next-or-preview-btn .swiper-button-next:hover, .our-happy-client-swiper-next-or-preview-btn .swiper-button-prev:hover {
+.ceo-swiper-next-or-preview-btn .swiper-button-next:hover, .ceo-swiper-next-or-preview-btn .swiper-button-prev:hover {
 	--tw-text-opacity: 1;
 	color: rgb(255 255 255 / var(--tw-text-opacity, 1)) /* #ffffff */ ;
 	--tw-bg-opacity: 1;

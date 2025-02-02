@@ -4,6 +4,7 @@ module.exports = {
      darkMode: 'class',
     theme: {
     screens: {
+      xs9: "255px",
       xs8: "277px",
       xs7: "285px",
       xs6: "320px",
@@ -62,6 +63,9 @@ module.exports = {
       "24xl": "2525px",
     },
     extend: {
+      colors: {
+        'gray-light': '#d9d9d9',
+      },
       fontFamily: {
         'jura': ["Jura", "serif"],
         'Jaldi': ["Jaldi", "serif"],
@@ -70,6 +74,7 @@ module.exports = {
         custom: '0px 4px 10px 0px rgba(47, 47, 47, 0.12)',
       },
        backgroundImage: {
+        'gradient-back': 'var(--button-colour, linear-gradient(259.34deg, rgba(176, 133, 245, 1) 23.11%, rgba(126, 87, 194, 1) 47.95%, rgba(0, 85, 127, 1) 100%))',
         'button-gradient': 'var(--button-colour, linear-gradient(259.34deg, rgba(176, 133, 245, 1) 23.11%, rgba(126, 87, 194, 1) 47.95%, rgba(0, 85, 127, 1) 100%))',
         'button-gradient-reverse': 'var(--button-colour, linear-gradient(259.34deg,  , rgba(0, 85, 127, 1) 23.11%, rgba(126, 87, 194, 1) 47.95%, rgba(176, 133, 245, 1) 100%)',
       },

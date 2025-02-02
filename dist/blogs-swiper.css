@@ -1,0 +1,195 @@
+.blog-swiper.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.blog-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}*/
+.blog-swiper .swiper-slide.swiper-slide-active {
+  width: 100%;
+}
+
+.blog-swiper .swiper-slide {
+  width: 100%;
+}
+
+/*.blog-swiper .swiper-slide:nth-child(3n) {
+  width: 40%;
+}*/
+
+/*.swiper-buttons .swiper-pagination */
+
+.blog-slider-area .swiper-buttons .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: auto !important;
+  top: auto !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+}
+
+.blog-slider-area .swiper-buttons {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.blog-slider-area .swiper-buttons .swiper-pagination {
+  position: static;
+  text-align: left !important;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.blog-slider-area .swiper-buttons .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--button-colour, linear-gradient(259.34deg, rgba(176, 133, 245, 1) 23.114068806171417%, rgba(126, 87, 194, 1) 47.950759530067444%, rgba(0, 85, 127, 1) 100%));
+  border-radius: 47px;
+  width: 44px;
+  height: 12px;
+  box-shadow: 0px 4px 13.1px 0px rgba(47, 47, 47, 0.15);
+}
+
+.blog-slider-area .swiper-buttons .swiper-pagination-bullet {
+  background: #d9d9d9;
+  border-radius: 47px;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.blog-slider-area .swiper-buttons .swiper-button-next, .swiper-rtl .swiper-button-prev {
+  position: static !important;
+}
+
+.blog-slider-area .swiper-buttons .swiper-button-prev, .swiper-rtl .swiper-button-next {
+  position: static !important;
+}
+
+.blog-slider-area .swiper-buttons .swiper-button-next, .blog-slider-area .swiper-buttons .swiper-button-prev {
+  border-radius: 1rem;
+  flex-shrink: 0;
+  width: 81px;
+  height: 72px;
+  --tw-border-opacity: 1;
+  border-color: rgb(126 87 194 / var(--tw-border-opacity, 1));
+  border-width: 2px;
+  transition-timing-function: linear;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  --tw-text-opacity: 1;
+  color: rgb(126 87 194 / var(--tw-text-opacity, 1)) /* #7e57c2 */ ;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-slider-area .swiper-buttons .swiper-button-next:hover, .blog-slider-area .swiper-buttons .swiper-button-prev:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) /* #ffffff */ ;
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 87 194 / var(--tw-bg-opacity, 1)) /* #7e57c2 */ ;
+}
+
+.blog-slider-area .swiper-buttons .swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 30px !important;
+}
+
+
+@media only screen and (min-width:768px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 95%;
+  }
+  .blog-swiper .swiper-slide {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width:805px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 90%;
+  }
+  .blog-swiper .swiper-slide {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width:850px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 85%;
+  }
+
+  .blog-swiper .swiper-slide {
+    width: 85%;
+  }
+
+}
+
+@media only screen and (min-width:925px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 80%;
+  }
+
+  .blog-swiper .swiper-slide {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (min-width:1024px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 75%;
+  }
+
+  .blog-swiper .swiper-slide {
+    width: 75%;
+  }
+
+}
+
+@media only screen and (min-width:1075px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 70%;
+  }
+
+  .blog-swiper .swiper-slide {
+    width: 70%;
+  }
+
+}
+
+@media only screen and (min-width:1125px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 65%;
+  }
+
+  .blog-swiper .swiper-slide {
+    width: 65%;
+  }
+
+}
+
+@media only screen and (min-width:1375px) {
+  .blog-swiper .swiper-slide.swiper-slide-active {
+    width: 55%;
+  }
+
+  .blog-swiper .swiper-slide {
+    width: 55%;
+  }
+
+}
