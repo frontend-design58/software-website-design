@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!--flip animation-->
     <link href="../dist/flip-animation.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Contact Page</title>
     <!--css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="../dist/main.css" rel="stylesheet">
@@ -531,34 +531,56 @@
 
                 			<div class=" flex md:flex-row flex-col justify-between items-center md:gap-0 gap-5 xs3:pt-11 pt-16">
                 				<div class="flex xs3:flex-row flex-col items-center 4xs:gap-3 gap-1">
-                					<div class="text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold">
+                					<div  class="text-[#2f2f2f] text-left font-jura text-sm leading-10 font-bold">
                 						Time zone -
                 					</div>
-                					<button type="button" class="bg-[#f4f4f4] rounded-lg !w-[111px] h-9 flex flex-row justify-between items-center  px-[.35rem]">
-                						<div class="text-[#515151] text-left font-Jaldi text-base leading-10 font-normal ps-3">
-                							EST
-                						</div>
-                						<div class="rounded-md w-10 h-[26px] flex flex-row items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
-                							<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.707 7.7071C7.51947 7.89457 7.26517 7.99988 7 7.99988C6.73484 7.99988 6.48053 7.89457 6.293 7.7071L0.636001 2.0501C0.540491 1.95785 0.464308 1.84751 0.411899 1.7255C0.35949 1.6035 0.331904 1.47228 0.33075 1.3395C0.329596 1.20672 0.354898 1.07504 0.405179 0.952145C0.455461 0.829248 0.529715 0.717596 0.623607 0.623703C0.7175 0.52981 0.82915 0.455557 0.952046 0.405276C1.07494 0.354995 1.20662 0.329694 1.3394 0.330848C1.47218 0.332002 1.6034 0.359588 1.72541 0.411997C1.84741 0.464406 1.95775 0.540588 2.05 0.636098L7 5.5861L11.95 0.636098C12.1386 0.45394 12.3912 0.353146 12.6534 0.355424C12.9156 0.357703 13.1664 0.462872 13.3518 0.64828C13.5372 0.833688 13.6424 1.0845 13.6447 1.3467C13.647 1.60889 13.5462 1.8615 13.364 2.0501L7.707 7.7071Z" fill="white"/>
-                							</svg>
-                						</div>
-                					</button>
+                					<div class=" relative">
+                                        <button type="button" id="TimeZoneBtn" class="bg-[#f4f4f4] rounded-lg  h-9 flex flex-row justify-between items-center  px-[.35rem]">
+                                            <div id="timeZone" class="text-[#515151] text-left font-Jaldi text-base leading-10 font-normal ps-3 pe-5">
+                                                EST
+                                            </div>
+                                            <div class="rounded-md w-10 h-[26px] flex flex-row items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.707 7.7071C7.51947 7.89457 7.26517 7.99988 7 7.99988C6.73484 7.99988 6.48053 7.89457 6.293 7.7071L0.636001 2.0501C0.540491 1.95785 0.464308 1.84751 0.411899 1.7255C0.35949 1.6035 0.331904 1.47228 0.33075 1.3395C0.329596 1.20672 0.354898 1.07504 0.405179 0.952145C0.455461 0.829248 0.529715 0.717596 0.623607 0.623703C0.7175 0.52981 0.82915 0.455557 0.952046 0.405276C1.07494 0.354995 1.20662 0.329694 1.3394 0.330848C1.47218 0.332002 1.6034 0.359588 1.72541 0.411997C1.84741 0.464406 1.95775 0.540588 2.05 0.636098L7 5.5861L11.95 0.636098C12.1386 0.45394 12.3912 0.353146 12.6534 0.355424C12.9156 0.357703 13.1664 0.462872 13.3518 0.64828C13.5372 0.833688 13.6424 1.0845 13.6447 1.3467C13.647 1.60889 13.5462 1.8615 13.364 2.0501L7.707 7.7071Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div id="TimeZoneList" class="bg-[#f4f4f4] rounded-lg p-1 w-[15em] h-[21vh] absolute top-11 left-0 overflow-y-auto hidden"></div>               
+                                    </div>
                 				</div>
                 				<div class="flex 4xs:flex-row flex-col items-center 4xs:gap-3 gap-1">
                 					<div class="text-[#2f2f2f] text-left font-jura text-sm xs8:leading-10 font-bold">
                 						Schedule Meeting -
                 					</div>
-                					<button type="button" class="bg-[#f4f4f4] rounded-lg xs8:h-9 flex xs8:flex-row flex-col items-center xs8:gap-3 gap-2 xs8:py-0 py-3 xs8:px-[.35rem] px-3 xs4:w-auto w-full">
-                						<div class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2">
-                							06 : 00 AM - 07 : 00 AM
-                						</div>
-                						<div class="rounded-md w-10 h-[26px] flex items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
-                							<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.70694 7.7071C7.51941 7.89457 7.2651 7.99988 6.99994 7.99988C6.73478 7.99988 6.48047 7.89457 6.29294 7.7071L0.63594 2.0501C0.54043 1.95785 0.464247 1.84751 0.411838 1.7255C0.359429 1.6035 0.331843 1.47228 0.330689 1.3395C0.329535 1.20672 0.354837 1.07504 0.405118 0.952145C0.455399 0.829248 0.529654 0.717596 0.623546 0.623703C0.717439 0.52981 0.829089 0.455557 0.951985 0.405276C1.07488 0.354995 1.20656 0.329694 1.33934 0.330848C1.47212 0.332002 1.60334 0.359588 1.72535 0.411997C1.84735 0.464406 1.95769 0.540588 2.04994 0.636098L6.99994 5.5861L11.9499 0.636098C12.1385 0.45394 12.3911 0.353146 12.6533 0.355424C12.9155 0.357703 13.1664 0.462872 13.3518 0.64828C13.5372 0.833688 13.6423 1.0845 13.6446 1.3467C13.6469 1.60889 13.5461 1.8615 13.3639 2.0501L7.70694 7.7071Z" fill="white"/>
-                							</svg>
-                						</div>
-                					</button>
+                                    <div class=" relative">
+                    					<button type="button" id="ScheduleMeeting" class="bg-[#f4f4f4] rounded-lg xs8:h-9 flex xs8:flex-row flex-col items-center xs8:gap-3 gap-2 xs8:py-0 py-3 xs8:px-[.35rem] px-3 xs4:w-auto w-full">
+                    						<div id="Schedule" class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2">
+                    							06 : 00 AM - 07 : 00 AM
+                    						</div>
+                    						<div class="rounded-md w-10 h-[26px] flex items-center justify-center" style="background: var(--button-colour,linear-gradient(259.34deg,rgba(176, 133, 245, 1) 23.114068806171417%,rgba(126, 87, 194, 1) 47.950759530067444%,rgba(0, 85, 127, 1) 100%));">
+                    							<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.70694 7.7071C7.51941 7.89457 7.2651 7.99988 6.99994 7.99988C6.73478 7.99988 6.48047 7.89457 6.29294 7.7071L0.63594 2.0501C0.54043 1.95785 0.464247 1.84751 0.411838 1.7255C0.359429 1.6035 0.331843 1.47228 0.330689 1.3395C0.329535 1.20672 0.354837 1.07504 0.405118 0.952145C0.455399 0.829248 0.529654 0.717596 0.623546 0.623703C0.717439 0.52981 0.829089 0.455557 0.951985 0.405276C1.07488 0.354995 1.20656 0.329694 1.33934 0.330848C1.47212 0.332002 1.60334 0.359588 1.72535 0.411997C1.84735 0.464406 1.95769 0.540588 2.04994 0.636098L6.99994 5.5861L11.9499 0.636098C12.1385 0.45394 12.3911 0.353146 12.6533 0.355424C12.9155 0.357703 13.1664 0.462872 13.3518 0.64828C13.5372 0.833688 13.6423 1.0845 13.6446 1.3467C13.6469 1.60889 13.5461 1.8615 13.3639 2.0501L7.70694 7.7071Z" fill="white"/>
+                    							</svg>
+                    						</div>
+                    					</button>
+                                        <div id="ScheduleMeetingList" class="bg-[#f4f4f4] rounded-lg xs8:px-[.35rem] px-3 w-full absolute top-10 right-0 space-y-1 py-1 h-[21vh] overflow-y-auto hidden">
+                                            <div onclick="selectSchedule(event)" class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2  xs8:py-0 py-1 cursor-pointer hover:bg-gray-200 hover:rounded-md">
+                                                06 : 00 AM - 07 : 00 AM
+                                            </div>
+                                            <div onclick="selectSchedule(event)" class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2  xs8:py-0 py-1 cursor-pointer hover:bg-gray-200 hover:rounded-md">
+                                                07 : 00 AM - 08 : 00 AM
+                                            </div>
+                                            <div onclick="selectSchedule(event)" class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2  xs8:py-0 py-1 cursor-pointer hover:bg-gray-200 hover:rounded-md">
+                                                08 : 00 AM - 09 : 00 AM
+                                            </div>
+                                            <div onclick="selectSchedule(event)" class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2  xs8:py-0 py-1 cursor-pointer hover:bg-gray-200 hover:rounded-md">
+                                                09 : 00 AM - 10 : 00 AM
+                                            </div>
+                                            <div onclick="selectSchedule(event)" class="text-[#515151] text-left font-Jaldi text-sm xs8:leading-10 font-normal ps-2  xs8:py-0 py-1 cursor-pointer hover:bg-gray-200 hover:rounded-md">
+                                                11 : 00 AM - 12 : 00 AM
+                                            </div>
+                                        </div>
+                                    </div>
                 				</div>
                 			</div>
 
@@ -768,15 +790,6 @@
     	const fileUploader = document.getElementById("file-uploader");
     	const fileInput = document.getElementById("file-input");
 
-    	function fileUpload()
-    	{
-    		fileInput.click();
-    	}
-
-    	fileUploader.addEventListener("click", fileUpload)
-
-    	// document.documentElement.classList.add('dark');
-
         var swiper = new Swiper(".days-select-slider", {
             breakpoints: {
                 1325: {
@@ -830,10 +843,77 @@
         });
 
 
+
+        const TimeZoneBtn = document.getElementById("TimeZoneBtn");
+        const TimeZoneList = document.getElementById("TimeZoneList");
+        const timeZone = document.getElementById("timeZone");
+
         const timeZones = Intl.supportedValuesOf("timeZone");
         const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-       	const matchingTimeZone = timeZones.find(zone => zone === userTimeZone);
-		console.log(matchingTimeZone);
+        const matchingTimeZone = timeZones.find(zone => zone === userTimeZone);
+        timeZone.innerText = matchingTimeZone
+
+        let timeZonesHtml = "";
+        if (timeZones.length > 0) {
+            timeZonesHtml = timeZones
+                .map(
+                    (timeZone) => `
+                        <div onclick="timeZoneSelect('${timeZone}')" class="text-[#515151] hover:bg-gray-200 rounded-md text-left font-Jaldi text-base font-normal px-[.35rem] py-1 cursor-pointer">
+                            ${timeZone}
+                        </div>`
+                )
+                .join(""); // Join array into a single string
+
+            TimeZoneList.innerHTML = timeZonesHtml; // Set innerHTML correctly
+        }
+
+        function timeZoneSelect(tZ)
+        {
+            timeZone.innerText = tZ
+            TimeZoneList.classList.add("hidden")
+        }
+
+        function TimeZoneToggle()
+        {
+            TimeZoneList.classList.toggle("hidden");
+        }
+
+        TimeZoneBtn.addEventListener("click", TimeZoneToggle)
+
+
+
+
+        const ScheduleMeetingBtn = document.getElementById("ScheduleMeeting");
+        const ScheduleMeetingList = document.getElementById("ScheduleMeetingList");
+        const Schedule = document.getElementById("Schedule");
+
+        function fileUpload()
+        {
+            fileInput.click();
+        }
+        function ScheduleMeetingSelect()
+        {
+            ScheduleMeetingList.classList.toggle("hidden");
+        }
+
+
+        fileUploader.addEventListener("click", fileUpload)
+        ScheduleMeetingBtn.addEventListener("click", ScheduleMeetingSelect)
+
+        function selectSchedule(event)
+        {
+            Schedule.innerText = event.target.innerText
+            ScheduleMeetingList.classList.add("hidden");
+        }
+
+        document.addEventListener("click", (e) => {
+             if (!ScheduleMeetingBtn.contains(e.target) && !ScheduleMeetingList.contains(e.target)) {
+                ScheduleMeetingList.classList.add("hidden");
+             }
+             if ( !TimeZoneBtn.contains(e.target) && !TimeZoneList.contains(e.target)) {
+                TimeZoneList.classList.add("hidden");
+             }
+        });
     </script>
 </body>
 </html>
