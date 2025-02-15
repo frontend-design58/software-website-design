@@ -2131,10 +2131,6 @@ video {
   width: 100px !important;
 }
 
-.\!w-\[111px\] {
-  width: 111px !important;
-}
-
 .\!w-\[124px\] {
   width: 124px !important;
 }
@@ -2301,6 +2297,10 @@ video {
 
 .w-\[1555px\] {
   width: 1555px;
+}
+
+.w-\[15em\] {
+  width: 15em;
 }
 
 .w-\[160px\] {
@@ -2609,18 +2609,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[3em\] {
-  width: 3em;
-}
-
-.w-\[10em\] {
-  width: 10em;
-}
-
-.w-\[15em\] {
-  width: 15em;
 }
 
 .max-w-\[160px\] {
@@ -3245,6 +3233,11 @@ video {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -3259,6 +3252,10 @@ video {
 
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
+}
+
+.bg-white\/40 {
+  background-color: rgb(255 255 255 / 0.4);
 }
 
 .bg-gradient-back {
@@ -3562,6 +3559,10 @@ video {
   padding-bottom: 9px;
 }
 
+.pe-5 {
+  padding-inline-end: 1.25rem;
+}
+
 .pl-6 {
   padding-left: 1.5rem;
 }
@@ -3732,18 +3733,6 @@ video {
 
 .pt-\[9px\] {
   padding-top: 9px;
-}
-
-.pe-5 {
-  padding-inline-end: 1.25rem;
-}
-
-.pe-7 {
-  padding-inline-end: 1.75rem;
-}
-
-.pe-6 {
-  padding-inline-end: 1.5rem;
 }
 
 .text-left {
@@ -4093,6 +4082,12 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur {
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .backdrop-filter {

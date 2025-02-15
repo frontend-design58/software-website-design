@@ -38,8 +38,9 @@
   </style>
     
 </head>
-<body>
-    <header class="bg-[rgba(255,255,255,0.06)] overflow-hidden fixed top-0 left-0 right-0 z-50" style="box-shadow: 0px 4px 15px 0px rgba(47, 47, 47, 0.12)">
+<body> 
+    <!-- rgba(255,255,255,0.06) -->
+    <header id="header" class="bg-white/50 backdrop-blur overflow-hidden fixed top-0 left-0 right-0 z-50" style="box-shadow: 0px 4px 15px 0px rgba(47, 47, 47, 0.12)">
         <nav class='2xl:max-w-7xl 1xl:max-w-[1221px] xl:max-w-6xl 3lg:max-w-5xl lg:max-w-4xl w-[90%] mx-auto flex flex-row items-center justify-between py-4'>
             <a href="" class="">
                 <img src="../assets/images/LOGO.png" alt="app logo" class="w-28">
@@ -1513,6 +1514,16 @@
     <!--scripts-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        const header = document.getElementById("header")
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {  // Change color after scrolling 50px
+                // header.style.backgroundColor = "#f8f9fa"; // Change to your desired color
+            } else {
+                // header.style.backgroundColor = "transparent"; // Reset to original
+            }
+        });
+
+
         var swiper = new Swiper(".mySwiper", {
             breakpoints: {
                 1280: {
