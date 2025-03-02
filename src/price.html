@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../dist/image-slide.css">
     <link rel="stylesheet" href="../dist/days-select-slider.css">
     <link rel="stylesheet" href="../dist/toggle-button.css">
+    <link rel="stylesheet" href="../dist/animations.css">
     <link href="../dist/style.css" rel="stylesheet">    
     
 </head>
@@ -236,7 +237,7 @@
 					</div>
 				</div>
 
-				<div id="project-dropdown" class=" project-dropdown pt-7 ">
+				<div id="project-dropdown" class=" project-dropdown pt-7  rounded-[30px]">
 					<div class="grid grid-cols-12 gap-5">
 						<div class="lg:col-span-9 md:col-span-8 sm:col-span-7 6xs:col-span-6 col-span-12">
 							<div class="bg-gradient-back -z-0 rounded-[30px] border border-solid w-full h-full  relative before:absolute before:top-[50%] before:left-[50%] before:-translate-x-2/4 before:-translate-y-2/4 before:1xl:w-[99.85%] before:xl:w-[99.7%] before:md:w-[99.55%] before:w-[99%] before:h-[99.5%] before:block before:rounded-[30px] before:bg-[#ffffff] before:z-0 before:overflow-hidden " style="box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);">
@@ -1496,7 +1497,7 @@
 								</defs>
 							</svg>
 						</div>
-						<div class="flex flex-row pt-11 relative z-10">
+						<div class="flex 3lg:flex-row flex-col 3lg:gap-0 gap-7 pt-11 relative z-10">
 							<div class="w-full">
 								<div class="text-left text-5xl font-bold relative">
 									<span>
@@ -1515,8 +1516,21 @@
 
 							</div>
 
-							<div class="w-full space-y-5">
-								<div class="bg-[#f4f4f4] rounded-[30px] h-[100px] flex flex-row justify-between items-center px-7" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12),inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
+							<div id="our-price-dropdown-area" class="our-price-collapse w-full space-y-5">
+								<!-- <div class="bg-[#f4f4f4] rounded-[30px] py-5 flex flex-row justify-between items-center px-7 shadow-inset-12">
+									<div class="text-[#7e57c2] text-left font-jura text-2xl font-medium">
+										Lorem Ipsum Dolor Sit Amit
+									</div>
+
+									<div class="rounded-[27px] border-solid border-[#7e57c2] border flex items-center justify-center w-[54px] h-[54px] relative">
+										<div>
+											<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M-0.00620083 1.0062C-0.00696186 0.874539 0.0182724 0.744025 0.0680561 0.622139C0.117842 0.500253 0.191196 0.389393 0.283915 0.295915C0.376915 0.20215 0.487558 0.127726 0.609467 0.0769369C0.731375 0.0261481 0.862133 -8.36799e-07 0.994198 -8.31026e-07C1.12626 -8.25253e-07 1.25702 0.0261481 1.37893 0.076937C1.50084 0.127726 1.61148 0.20215 1.70448 0.295915L9.99778 8.59922L18.2911 0.295916C18.3844 0.20264 18.4951 0.12865 18.617 0.0781699C18.7388 0.0276895 18.8695 0.00170723 19.0014 0.00170724C19.2678 0.00170725 19.5233 0.107537 19.7117 0.295916C19.9 0.484295 20.0059 0.739791 20.0059 1.0062C20.0059 1.27261 19.9 1.5281 19.7117 1.71648L10.7081 10.7201C10.6151 10.8138 10.5044 10.8883 10.3825 10.939C10.2606 10.9898 10.1298 11.016 9.99778 11.016C9.86572 11.016 9.73496 10.9898 9.61305 10.939C9.49114 10.8883 9.3805 10.8138 9.2875 10.7201L0.283914 1.71648C0.191196 1.623 0.117842 1.51214 0.068056 1.39026C0.0182723 1.26837 -0.00696187 1.13786 -0.00620083 1.0062Z" fill="#B085F5"/>
+											</svg>
+										</div>
+									</div>
+								</div> -->
+								<!-- <div class="bg-[#f4f4f4] rounded-[30px] h-[100px] flex flex-row justify-between items-center px-7" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12),inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
 									<div class="text-[#2f2f2f] text-left font-jura text-2xl font-medium relative">
 										Lorem Ipsum Dolor Sit Amit
 									</div>
@@ -1528,20 +1542,7 @@
 											</svg>
 										</div>
 									</div>
-								</div>
-								<div class="bg-[#f4f4f4] rounded-[30px] h-[100px] flex flex-row justify-between items-center px-7" style="box-shadow: inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12),inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12);">
-									<div class="text-[#2f2f2f] text-left font-jura text-2xl font-medium relative">
-										Lorem Ipsum Dolor Sit Amit
-									</div>
-
-									<div class="rounded-[27px] border-solid border-[#7e57c2] border flex items-center justify-center w-[54px] h-[54px] relative">
-										<div>
-											<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M-0.00620083 1.0062C-0.00696186 0.874539 0.0182724 0.744025 0.0680561 0.622139C0.117842 0.500253 0.191196 0.389393 0.283915 0.295915C0.376915 0.20215 0.487558 0.127726 0.609467 0.0769369C0.731375 0.0261481 0.862133 -8.36799e-07 0.994198 -8.31026e-07C1.12626 -8.25253e-07 1.25702 0.0261481 1.37893 0.076937C1.50084 0.127726 1.61148 0.20215 1.70448 0.295915L9.99778 8.59922L18.2911 0.295916C18.3844 0.20264 18.4951 0.12865 18.617 0.0781699C18.7388 0.0276895 18.8695 0.00170723 19.0014 0.00170724C19.2678 0.00170725 19.5233 0.107537 19.7117 0.295916C19.9 0.484295 20.0059 0.739791 20.0059 1.0062C20.0059 1.27261 19.9 1.5281 19.7117 1.71648L10.7081 10.7201C10.6151 10.8138 10.5044 10.8883 10.3825 10.939C10.2606 10.9898 10.1298 11.016 9.99778 11.016C9.86572 11.016 9.73496 10.9898 9.61305 10.939C9.49114 10.8883 9.3805 10.8138 9.2875 10.7201L0.283914 1.71648C0.191196 1.623 0.117842 1.51214 0.068056 1.39026C0.0182723 1.26837 -0.00696187 1.13786 -0.00620083 1.0062Z" fill="#B085F5"/>
-											</svg>
-										</div>
-									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -2432,6 +2433,132 @@
 	}
 
 	pickYourProject.addEventListener("click", projectDropdownfun)
+
+	document.addEventListener("DOMContentLoaded", function(){
+		const ourPriceDropdownArea = document.getElementById("our-price-dropdown-area");
+            let items = Array.from({ length: 2 }, (_, i) => i + 1);
+			let cardItems = ""
+            items.forEach((_, i) => {
+                cardItems += `<div id="dropdown-card-collapse-${i+1}" class=" ${i+1 === 1 ? "lg:py-[1.5px] 2md:py-[2px] py-[1.5px] 2md:px-[2px] px-[1.5px] bg-gradient-back shadow-25" : ""}  rounded-[30px] our-price-collapse-height-animation">
+									<div class="${i+1 !== 1 ? "" : "bg-[#f4f4f4] rounded-[30px]  px-7 py-5 "}">
+										<div id="dropdown-card-collapse-title-${i+1}" class="${i+1 === 1 ? "" : "hidden"} flex flex-row justify-between items-center">
+											<div id="collapse-title-${i+1}" class="text-[#7e57c2] text-left font-jura text-2xl ${i+1 === 1 ? "font-bold" : "font-medium"}">
+											  Lorem Ipsum Dolor Sit Amit
+											</div>
+											<button type="button" onclick="closeDropdownCollpase(${i+1})" class="rounded-[27px] border-solid border-[#7e57c2] border w-[54px] h-[54px] 3xs:flex hidden justify-center items-center ${i+1 === 1 ? "rotate-180" : "rotate-0"} transition-all duration-500 ease-linear">
+											  	<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M-0.00620083 1.0062C-0.00696186 0.874539 0.0182724 0.744025 0.0680561 0.622139C0.117842 0.500253 0.191196 0.389393 0.283915 0.295915C0.376915 0.20215 0.487558 0.127726 0.609467 0.0769369C0.731375 0.0261481 0.862133 -8.36799e-07 0.994198 -8.31026e-07C1.12626 -8.25253e-07 1.25702 0.0261481 1.37893 0.076937C1.50084 0.127726 1.61148 0.20215 1.70448 0.295915L9.99778 8.59922L18.2911 0.295916C18.3844 0.20264 18.4951 0.12865 18.617 0.0781699C18.7388 0.0276895 18.8695 0.00170723 19.0014 0.00170724C19.2678 0.00170725 19.5233 0.107537 19.7117 0.295916C19.9 0.484295 20.0059 0.739791 20.0059 1.0062C20.0059 1.27261 19.9 1.5281 19.7117 1.71648L10.7081 10.7201C10.6151 10.8138 10.5044 10.8883 10.3825 10.939C10.2606 10.9898 10.1298 11.016 9.99778 11.016C9.86572 11.016 9.73496 10.9898 9.61305 10.939C9.49114 10.8883 9.3805 10.8138 9.2875 10.7201L0.283914 1.71648C0.191196 1.623 0.117842 1.51214 0.068056 1.39026C0.0182723 1.26837 -0.00696187 1.13786 -0.00620083 1.0062Z" fill="#B085F5"/>
+												</svg>
+											</button>
+										</div>
+										<div id="dropdown-collapse-${i+1}" onclick="dropdownCollpase(${i+1})" class="${i+1 === 1 ? "hidden" : ""} bg-[#f4f4f4] rounded-[30px]  px-7 py-5 shadow-inset-12 cursor-pointer flex flex-row justify-between items-center our-price-collapse-item-height-animation">
+											<div class="text-[#7e57c2] text-left font-jura text-2xl ${i+1 === 1 ? "font-bold" : "font-medium"}">
+											  Lorem Ipsum Dolor Sit Amit
+											</div>
+											<div class="rounded-[27px] border-solid border-[#7e57c2] border w-[54px] h-[54px]  3xs:flex hidden justify-center items-center ${i+1 === 1 ? "rotate-180" : "rotate-0"} transition-[rotate] duration-500 ease-linear">
+											  	<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M-0.00620083 1.0062C-0.00696186 0.874539 0.0182724 0.744025 0.0680561 0.622139C0.117842 0.500253 0.191196 0.389393 0.283915 0.295915C0.376915 0.20215 0.487558 0.127726 0.609467 0.0769369C0.731375 0.0261481 0.862133 -8.36799e-07 0.994198 -8.31026e-07C1.12626 -8.25253e-07 1.25702 0.0261481 1.37893 0.076937C1.50084 0.127726 1.61148 0.20215 1.70448 0.295915L9.99778 8.59922L18.2911 0.295916C18.3844 0.20264 18.4951 0.12865 18.617 0.0781699C18.7388 0.0276895 18.8695 0.00170723 19.0014 0.00170724C19.2678 0.00170725 19.5233 0.107537 19.7117 0.295916C19.9 0.484295 20.0059 0.739791 20.0059 1.0062C20.0059 1.27261 19.9 1.5281 19.7117 1.71648L10.7081 10.7201C10.6151 10.8138 10.5044 10.8883 10.3825 10.939C10.2606 10.9898 10.1298 11.016 9.99778 11.016C9.86572 11.016 9.73496 10.9898 9.61305 10.939C9.49114 10.8883 9.3805 10.8138 9.2875 10.7201L0.283914 1.71648C0.191196 1.623 0.117842 1.51214 0.068056 1.39026C0.0182723 1.26837 -0.00696187 1.13786 -0.00620083 1.0062Z" fill="#B085F5"/>
+												</svg>
+											</div>
+										</div>
+										<div id="content-${i+1}" class="${i+1 === 1 ? "" : "hidden"} our-price-collapse-content-animation text-[#515151] text-left font-Jaldi text-xl font-normal">
+										  Our pricing is reflected by our lean, user-centric approach to product
+										  innovation and software development.
+										</div>
+									</div>
+								</div>`;
+            });
+
+		ourPriceDropdownArea.innerHTML = `${cardItems}`
+	})
+
+	function dropdownCollpase(id){
+		const ourPriceDropdownArea = document.getElementById("our-price-dropdown-area");
+		const dropdownCollapse = document.getElementById(`dropdown-collapse-${id}`)
+		dropdownCollapse.classList.add("hidden")
+
+		Array.from(ourPriceDropdownArea.childNodes).forEach((child, index) => {
+                    if (child.nodeType === Node.ELEMENT_NODE) { 
+                       if (child.id.startsWith("dropdown-card-collapse")) {
+                            const childId = child.id.match(/\d+$/)?.[0];
+                            if (Number(childId) === id) {
+								let dropdownCardCollapse = document.getElementById(`dropdown-card-collapse-${childId}`)
+								let childCardDropdownCollapseText = document.getElementById(`dropdown-card-collapse-title-${childId}`)
+								let childDropdownCollapse = document.getElementById(`dropdown-collapse-${childId}`)
+								let collapseTitle = document.getElementById(`collapse-title-${childId}`)
+                            	child.children[0].childNodes[5].classList.remove("hidden")
+                            	child.children[0].className = "bg-[#f4f4f4] rounded-[30px]  px-7 py-5 "
+								collapseTitle.classList.remove("font-medium")
+								collapseTitle.classList.add("font-bold")
+								childCardDropdownCollapseText.lastElementChild.classList.remove("rotate-0")
+								childCardDropdownCollapseText.lastElementChild.classList.add("rotate-180")
+								childCardDropdownCollapseText.classList.remove("hidden")
+								childDropdownCollapse.classList.add("hidden")
+                            	dropdownCardCollapse.className = "lg:py-[1.5px] 2md:py-[2px] py-[1.5px] 2md:px-[2px] px-[1.5px] bg-gradient-back shadow-25 rounded-[30px]";
+                            }else{
+								let dropdownCardCollapse = document.getElementById(`dropdown-card-collapse-${childId}`)
+								let childCardDropdownCollapseText = document.getElementById(`dropdown-card-collapse-title-${childId}`)
+								let childDropdownCollapse = document.getElementById(`dropdown-collapse-${childId}`)
+								
+								// dropdownCardCollapse.classList.add("our-price-collapse-height-collapse")
+								// setTimeout(()=> {
+									childDropdownCollapse.classList.remove("hidden")
+									dropdownCardCollapse.classList.remove("our-price-collapse-height-collapse")
+									childCardDropdownCollapseText.classList.add("hidden")
+									dropdownCardCollapse.className = ""
+								// }, 700)
+								childDropdownCollapse.childNodes[1].classList.remove("font-bold")
+								childDropdownCollapse.childNodes[1].classList.add("font-medium")
+
+								childDropdownCollapse.lastElementChild.classList.remove("rotate-180")
+								childDropdownCollapse.lastElementChild.classList.add("rotate-0")
+                            	Array.from(child.children).forEach((el, i) => {
+								    el.className = ""
+									Array.from(child.children[0].childNodes).forEach((childNode, index) => {
+										if (childNode.id === `content-${childId}`) {
+											const childNodeId = childNode.id.match(/\d+$/)?.[0];
+											let content = document.getElementById(`content-${childId}`)
+											content.classList.add("hidden")
+										}
+									})
+								}); 
+                            }
+                       }
+                   }
+               })
+	}
+
+	function closeDropdownCollpase(id){
+		const dropdownCardCollapse = document.getElementById(`dropdown-card-collapse-${id}`)
+		const content = document.getElementById(dropdownCardCollapse.firstElementChild.lastElementChild.id)
+		const dropdownCollapse = document.getElementById(`dropdown-collapse-${id}`)
+		const dropdownCardCollapseTitle = document.getElementById(`dropdown-card-collapse-title-${id}`)
+		dropdownCollapse.classList.remove("hidden")
+		dropdownCollapse.firstElementChild.classList.remove("font-bold")
+		dropdownCollapse.firstElementChild.classList.add("font-medium")
+		dropdownCollapse.lastElementChild.classList.remove("rotate-180")
+		dropdownCollapse.lastElementChild.classList.add("rotate-0")
+		
+		dropdownCardCollapseTitle.classList.add("hidden")
+		dropdownCardCollapse.classList.remove(
+		    "lg:py-[1.5px]",
+		    "2md:py-[2px]",
+		    "py-[1.5px]",
+		    "2md:px-[2px]",
+		    "px-[1.5px]",
+		    "bg-gradient-back",
+		    "shadow-25"
+		);
+		dropdownCardCollapse.firstElementChild.className = ""
+		dropdownCardCollapse.classList.remove("our-price-collapse-height-animation")
+		dropdownCardCollapse.classList.add("our-price-collapse-height-collapse")
+		content.classList.add("our-price-collapse-content-collapse")
+		setTimeout(() => {
+			content.classList.add("hidden")
+			dropdownCardCollapse.classList.remove("our-price-collapse-height-collapse")
+			content.classList.remove("our-price-collapse-content-collapse")
+		}, 300)
+	}
 
 </script>
 </body>

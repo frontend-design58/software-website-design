@@ -437,14 +437,15 @@ li:nth-last-child(2) .timeline-dot {
 /*project dropdown start*/
 .project-dropdown {
     height: 0;
-    overflow: hidden;
     opacity: 0;
-    transition: height 0.5s ease, opacity 0.5s ease;
+    padding-bottom: 0;
+    transition: height 0.5s ease, opacity 0.5s ease, padding-bottom 0.3s ease;
 }
 
 .project-dropdown-show {
     height: 100%; /* Replace 200px with your dropdown's content height */
     opacity: 1;
+    padding-bottom: 2rem;
 }
 
 /*project dropdown end*/

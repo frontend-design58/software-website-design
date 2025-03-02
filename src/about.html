@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../dist/image-slide.css">
     <link rel="stylesheet" href="../dist/ceo-slider.css">
+    <link rel="stylesheet" href="../dist/animations.css">
     <link href="../dist/style.css" rel="stylesheet">    
     
 </head>
@@ -182,7 +183,7 @@
     				</div>
     			</div>
 
-    			<div class="flex md:flex-row flex-col gap-7 pt-32 pb-5">
+    			<div class="flex 2md:flex-row flex-col gap-7 pt-32 pb-5">
     				<div class="w-full flex items-center">
     					<div>
     						<div class="text-[#7e57c2] text-left font-jura text-5xl font-bold">
@@ -193,8 +194,8 @@
     						</div>
     					</div>
     				</div>
-    				<div class="w-full">
-    					<div class="flex flex-row  justify-between items-center border-t border-solid border-[#AFACB4] py-5">
+    				<div id="faq-dropdown-area" class="about-faq w-full space-y-5">
+    					<!-- <div class="flex flex-row  justify-between items-center border-t border-solid border-[#AFACB4] py-5">
     						<div class="text-[#7e57c2] text-left font-jura text-2xl font-medium relative">
     							Lorem ipsum dolor .
     						</div>
@@ -233,7 +234,7 @@
     								<path d="M8.16671 0.583374V5.83337H13.4167V8.16671H8.16671V13.4167H5.83337V8.16671H0.583374V5.83337H5.83337V0.583374H8.16671Z" fill="#7E57C2"/>
     							</svg>
     						</div>
-    					</div>
+    					</div> -->
     				</div>
     			</div>
     		</div>
@@ -2097,6 +2098,114 @@
             //     stopOnLastSlide: false // Stop autoplay when it reaches last slide
             // }
         });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let faqdropdownArea = document.getElementById("faq-dropdown-area");
+            if (!faqdropdownArea) {
+                console.error("About faq dropdown area not found!");
+                return;
+            }
+            let items = Array.from({ length: 3 }, (_, i) => i + 1);
+            let cardItems = "";
+            items.forEach((_, i) => {
+                cardItems += `
+                        <div id="faq-dropdown-item-${i+1}" onclick="dropdownItemBtns(${i+1})" class="${i+1 === 1 ? "hidden" : ""} cursor-pointer bg-[#f4f4f4] rounded-[30px] py-6 px-4 flex flex-row justify-between items-center  faq-item-height-animation">
+                            <div class="text-[#7e57c2] text-left font-jura text-2xl font-medium relative">
+                                Lorem ipsum dolor .${i+1}
+                            </div>
+                              <div class="rounded-[50%] border-solid border-[#7e57c2] border w-[42px] h-[42px] xs6:flex hidden justify-center items-center">
+                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.16659 0.583374V5.83337H13.4166V8.16671H8.16659V13.4167H5.83325V8.16671H0.583252V5.83337H5.83325V0.583374H8.16659Z" fill="#7E57C2"/>
+                                    </svg>
+                              </div>
+                        </div>
+                    <div id="faq-dropdown-card-${i+1}" class="${i+1 !== 1 ? "hidden" : ""} lg:py-[1.5px] 2md:py-[2px] py-[1.5px] 2md:px-[2px] px-[1.5px] rounded-[30px] bg-gradient-back shadow-25 faq-card-height-animation">
+                            <div class="bg-[#ffffff] rounded-[30px] text-gray-700 p-4">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div class="text-[#7e57c2] text-left font-jura text-xl font-medium relative">
+                                            Lorem ipsum dolor .${i+1}
+                                    </div>
+                                    <div onclick="closeDropdownFaq(${i+1})" class="rounded-[50%] cursor-pointer border-solid border-[#7e57c2] border w-[42px] h-[42px] xs6:flex hidden justify-center items-center">
+                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H15" stroke="#7E57C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>  
+                                <div class="text-[#515151] text-left font-Jaldi text-[15px] font-normal pt-4 pb-2">
+                                  Lorem ipsum dolor sit amet consectetur. Commodo consectetur pretium risus
+                                  tristique porta mi. Malesuada dui facilisis aenean elit sapien. Vitae
+                                  ullamcorper semper egestas a dui dolor massa fames. Gravida sodales tellus
+                              </div>
+                            </div>
+                        </div>
+                `;
+            });
+
+            faqdropdownArea.innerHTML = `
+                ${cardItems}
+            `;
+        })
+
+        function dropdownItemBtns(idNumber){
+                let faqdropdownArea = document.getElementById("faq-dropdown-area");
+
+                Array.from(faqdropdownArea.childNodes).forEach((child, index) => {
+                    if (child.nodeType === Node.ELEMENT_NODE) { // Ensures only element nodes are included
+                       if (child.id.startsWith("faq-dropdown-card")) {
+                            const number = child.id.match(/\d+$/)?.[0];
+                            const faqDropdownCard = document.getElementById(`faq-dropdown-card-${number}`);
+
+                            if (Number(number) === idNumber) {
+                                faqDropdownCard.classList.remove("faq-card-height-collapse")
+                                setTimeout(() => {
+                                    faqDropdownCard.classList.remove("hidden")
+                                }, 700);
+                            }else{
+                                faqDropdownCard.classList.add("faq-card-height-collapse")
+                                setTimeout(() => {
+                                    faqDropdownCard.classList.add("hidden");
+                                }, 700);
+                            }
+                        }
+                    }
+                });
+                Array.from(faqdropdownArea.childNodes).forEach((child, index) => {
+                    if (child.nodeType === Node.ELEMENT_NODE) { // Ensures only element nodes are included
+                       if (child.id.startsWith("faq-dropdown-item")) {
+                            const number = child.id.match(/\d+$/)?.[0];
+                            const faqDropdownItem = document.getElementById(`faq-dropdown-item-${number}`);
+                            
+                            if (Number(number) === idNumber) {
+                                faqDropdownItem.classList.add("faq-item-height-collapse")
+                                setTimeout(() => {
+                                    faqDropdownItem.classList.add("hidden")
+                                }, 500)
+                            }else{
+                                faqDropdownItem.classList.remove("faq-item-height-collapse")
+                                setTimeout(() => {
+                                    faqDropdownItem.classList.remove("hidden")
+                                }, 500)
+                            }
+
+                       }
+                   }
+                })
+        }
+        function closeDropdownFaq(idNumber){
+            let faqdropdownArea = document.getElementById("faq-dropdown-area");
+            let faqDropdownCard = document.getElementById(`faq-dropdown-card-${idNumber}`);
+            let faqDropdownItem = document.getElementById(`faq-dropdown-item-${idNumber}`);
+            faqDropdownCard.classList.add("faq-card-height-collapse")
+            faqDropdownItem.classList.add("faq-item-height-collapse")
+            setTimeout(() => {
+                faqDropdownCard.classList.add("hidden");
+                faqDropdownItem.classList.remove("hidden");
+                faqDropdownCard.classList.remove("faq-card-height-collapse")
+                faqDropdownItem.classList.remove("faq-item-height-collapse")
+            }, 700)
+        }
+
     </script>
 </body>
 </html>

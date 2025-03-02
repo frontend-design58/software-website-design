@@ -1,0 +1,179 @@
+@keyframes expandWorkHeight {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 905px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes collapseWorkHeight {
+    from {
+        max-height: 905px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
+.work-box-height-animation {
+    animation: expandWorkHeight 0.9s ease-in-out forwards;
+}
+
+.work-box-height-collapse {
+    animation: collapseWorkHeight 0.7s ease-in-out forwards;
+}
+
+@keyframes expandAboutFaqHeight {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 400px;
+        opacity: 1;
+    }
+}
+
+@keyframes collapseAboutFaqHeight {
+    from {
+        max-height: 400px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+.about-faq .faq-card-height-animation {
+    animation: expandAboutFaqHeight 0.9s ease-in-out forwards;
+}
+.about-faq .faq-card-height-collapse {
+    animation: collapseAboutFaqHeight 0.9s ease-in-out forwards;
+}
+
+
+@keyframes expandAboutFaqItemHeight {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 170px;
+        opacity: 1;
+    }
+}
+@keyframes collapseAboutFaqItemHeight {
+    from {
+        max-height: 400px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+.about-faq .faq-item-height-animation {
+    animation: expandAboutFaqItemHeight 0.5s ease-in-out forwards;
+}
+.about-faq .faq-item-height-collapse {
+    animation: collapseAboutFaqItemHeight 0.9s ease-in-out forwards;
+}
+
+
+
+@keyframes expandPriceOurPriceCollapseHeight {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 550px;
+        opacity: 1;
+    }
+}
+@keyframes collapsePriceOurPriceCollapseHeight {
+    from {
+        max-height: 550px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+.our-price-collapse .our-price-collapse-height-animation {
+    animation: expandPriceOurPriceCollapseHeight 0.9s ease-in-out forwards;
+}
+.our-price-collapse .our-price-collapse-height-collapse {
+    animation: collapsePriceOurPriceCollapseHeight 0.7s ease-in-out forwards;
+}
+
+
+
+
+
+@keyframes expandPriceOurPriceCollapseItemHeight {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 550px;
+        opacity: 1;
+    }
+}
+@keyframes collapsePriceOurPriceCollapseItemHeight {
+    from {
+        max-height: 550px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+.our-price-collapse .our-price-collapse-item-height-animation {
+    animation: expandPriceOurPriceCollapseItemHeight 0.7s ease-in-out forwards;
+}
+.our-price-collapse .our-price-collapse-item-height-collapse {
+    animation: collapsePriceOurPriceCollapseItemHeight 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes expandPriceOurPriceCollapseContent {
+    from {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+    }
+    to {
+        max-height: 350px;
+        opacity: 1;
+        padding-top: 3rem;
+    }
+}
+@keyframes collapsePriceOurPriceCollapseContent {
+    from {
+        max-height: 350px;
+        opacity: 1;
+        padding-top: 3rem;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+    }
+}
+.our-price-collapse .our-price-collapse-content-animation {
+    animation: expandPriceOurPriceCollapseContent 0.7s ease-in-out forwards;
+}
+.our-price-collapse .our-price-collapse-content-collapse {
+    animation: collapsePriceOurPriceCollapseContent 0.3s ease-in-out forwards;
+}

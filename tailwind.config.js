@@ -72,6 +72,8 @@ module.exports = {
       },
       boxShadow: {
         custom: '0px 4px 10px 0px rgba(47, 47, 47, 0.12)',
+        25: '0px 4px 12px 0px rgba(47, 47, 47, 0.25)',
+        'inset-12': 'inset -1px -1px 4px 0px rgba(101, 101, 101, 0.12),inset 1px 1px 4px 0px rgba(47, 47, 47, 0.12)',
       },
        backgroundImage: {
         'gradient-back': 'var(--button-colour, linear-gradient(259.34deg, rgba(176, 133, 245, 1) 23.11%, rgba(126, 87, 194, 1) 47.95%, rgba(0, 85, 127, 1) 100%))',
